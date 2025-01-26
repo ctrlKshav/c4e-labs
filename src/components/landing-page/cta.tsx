@@ -42,7 +42,7 @@ export default function CTASection() {
     <section className="relative ">
       {/* Subtle Gradient Background */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-background via-muted to-muted/80 opacity-80"
+        className="absolute inset-0 bg-gradient-to-br from-background from-60% via-primary via-60% to-secondary to-100%"
         style={{
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)",
         }}
