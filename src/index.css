@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 255% 255%;
+    --foreground: 175.3 5% 0%;
+    --card: 175.3 50% 90%;
+    --card-foreground: 175.3 5% 10%;
+    --popover: 175.3 100% 95%;
+    --popover-foreground: 175.3 100% 0%;
+    --primary: 175.3 77.4% 26.1%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 175.3 30% 70%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 137.3 30% 85%;
+    --muted-foreground: 175.3 5% 35%;
+    --accent: 137.3 30% 80%;
+    --accent-foreground: 175.3 5% 10%;
+    --destructive: 0 100% 30%;
+    --destructive-foreground: 175.3 5% 90%;
+    --border: 175.3 30% 50%;
+    --input: 175.3 30% 18%;
+    --ring: 175.3 77.4% 26.1%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 175.3 50% 5%;
+    --foreground: 175.3 5% 90%;
+    --card: 175.3 50% 0%;
+    --card-foreground: 175.3 5% 90%;
+    --popover: 175.3 50% 5%;
+    --popover-foreground: 175.3 5% 90%;
+    --primary: 175.3 77.4% 26.1%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 175.3 30% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 137.3 30% 15%;
+    --muted-foreground: 175.3 5% 60%;
+    --accent: 137.3 30% 15%;
+    --accent-foreground: 175.3 5% 90%;
+    --destructive: 0 100% 30%;
+    --destructive-foreground: 175.3 5% 90%;
+    --border: 175.3 30% 18%;
+    --input: 175.3 30% 18%;
+    --ring: 175.3 77.4% 26.1%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-radial-stripe {
+    background: radial-gradient(circle at top left, #9089fc, transparent 30%),
+      radial-gradient(circle at top right, #09ba82, transparent 30%),
+      radial-gradient(at bottom left, #09ba82, transparent 30%),
+      radial-gradient(at bottom right, #80b5ff, transparent 30%);
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
+  .animate-gradient-slow {
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .drop-shadow-glow {
+    filter: drop-shadow(0 0 5px rgba(250, 204, 21, 0.5));
+  }
+}
