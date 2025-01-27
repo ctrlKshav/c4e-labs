@@ -17,7 +17,7 @@ export default function SelectProductType() {
       description:
         "Explore our comprehensive range of Software as a Service solutions designed to streamline your business operations, boost productivity, and drive growth in the digital landscape.",
       icon: <Cloud className="h-8 w-8 text-blue-600" />,
-      color: "bg-gradient-two-corners from-blue-500 to-indigo-500",
+      color: "bg-gradient-two-corners from-blue-500 to-indigo-500 bg-white/30",
     },
     {
       id: "shopify-plugins",
@@ -25,7 +25,7 @@ export default function SelectProductType() {
       description:
         "Enhance your Shopify store with our powerful plugins, crafted to optimize your e-commerce experience, increase sales, and provide seamless integration with various services and features.",
       icon: <ShoppingBag className="h-8 w-8 text-green-500" />,
-      color: "bg-gradient-two-corners-top from-yellow-500 to-orange-500",
+      color: "bg-gradient-two-corners-top from-yellow-500 to-orange-500 ",
     },
     {
       id: "others",
@@ -33,7 +33,7 @@ export default function SelectProductType() {
       description:
         "Discover our diverse range of innovative products that don't fit the traditional SaaS or Shopify plugin categories. These unique solutions address specific needs across various industries and use cases.",
       icon: <Package className="h-8 w-8 text-gray-600" />,
-      color: "bg-gradient-two-corners-top from-green-500 to-teal-500",
+      color: "bg-gradient-two-corners-top from-green-500 to-teal-500 bg-white/30",
     },
   ] as const;
 
