@@ -6,7 +6,8 @@ import { ArrowRight } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+    <section className="relative overflow-hidden bg-gradient-radial-quad animate-gradient-slow">
+
       <div className="container mx-auto px-4 py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
