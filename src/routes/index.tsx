@@ -6,8 +6,7 @@ import Features from "@/components/landing-page/features"
 import AboutUs from '@/components/landing-page/about-us'
 import CTASection  from "@/components/landing-page/cta"
 import Footer from '@/components/landing-page/footer'
-import ProjectManagement from "@/components/real";
-
+import ProductsManagement from '@/components/landing-page/products-management'
 
 
 export const Route = createFileRoute('/')({
@@ -19,7 +18,7 @@ export default function Home() {
     <>
       <Hero />
       <AboutUs />
-      <ProjectManagement />
+      <ProductsManagement />
       <Features />
       <CTASection />
       <Footer />

@@ -42,10 +42,7 @@ export default function CTASection() {
     <section className="relative ">
       {/* Animated gradient background */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-transparent from-70% via-card via-80% to-secondary to-100%"
-        style={{
-          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)",
-        }}
+        className="absolute inset-0 "
       />
       
 

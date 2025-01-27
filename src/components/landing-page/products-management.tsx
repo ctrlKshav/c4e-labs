@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Home, Rocket, Zap, BarChart, Users, Headphones, ListTodo, Send, Plus, MessageSquare } from "lucide-react"
 
-export default function LandingPage() {
+export default function ProductsManagement() {
   return (
     <div className="relative overflow-hidden">
       {/* Blue circle background */}

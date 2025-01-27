@@ -16,7 +16,7 @@ export function ProductCard({
   links,
 }: ProductCardProps) {
   return (
-    <Card className="p-6 bg-background">
+    <Card className="p-6 bg-card">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-semibold text-primary">{title}</h3>
         <Badge variant="outline">{status}</Badge>
