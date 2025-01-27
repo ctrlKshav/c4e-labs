@@ -1,14 +1,15 @@
-﻿export interface ProductFeature {
+﻿import { ReactNode } from "react";
+
+export interface ProductInterface {
+  id: string;
+  name: string;
+  icon: ReactNode;
+  description: string;
+  themeColor?: string; 
+  features: {
     title: string;
     items: string[];
-}
-
-export interface Product {
-    id: string;
-    name: string;
-    icon: React.ReactNode;
-    description: string;
-    iconColor: string;
-    features: ProductFeature[];
-    link: string;
+  }[];
+  link?: string; 
+  imageSrc?: string;
 }
