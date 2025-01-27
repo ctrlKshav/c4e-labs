@@ -68,7 +68,7 @@ const Features: React.FC = () => {
             strategy, and execution.
           </p>
         </motion.div>
-        <div className="grid md:grid-cols-3 gap-16 relative">
+        <div className="grid md:grid-cols-3 gap-8 relative">
           {features.map((feature, index) => (
             <motion.div
               key={index}

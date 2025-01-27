@@ -41,16 +41,12 @@ export default function CTASection() {
   return (
     <section className="relative ">
       {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-radial-stripe animate-gradient-slow ">
-        <div className="absolute inset-0 bg-background/50" />
-        {/* Subtle Gradient Background */}
       <div
         className="absolute inset-0 bg-gradient-to-br from-transparent from-70% via-card via-80% to-secondary to-100%"
         style={{
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)",
         }}
       />
-      </div>
       
 
       <div className="container relative mx-auto px-4 py-24">
