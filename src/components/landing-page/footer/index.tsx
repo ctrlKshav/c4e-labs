@@ -4,7 +4,7 @@ import React from "react"
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import FooterCard from "@/components/footer-card"
+import FooterCard from "@/components/landing-page/footer/footer-card"
 import { Separator } from "@/components/ui/separator"
 
 const SocialLinks = () => {
@@ -94,7 +94,6 @@ const Footer = () => {
           </FooterCard>
         </div>
 
-        <Separator className="mt-12" />
         <div className="mt-6 text-center">
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} C4E Labs. All rights reserved.
