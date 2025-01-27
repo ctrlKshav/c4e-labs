@@ -51,7 +51,7 @@ export default function Product({ product, index }: { product: ProductInterface,
             </div>
 
             {/* Link (if applicable) */}
-            {product.link && (
+            {product.link ? (
               <a
                 href={product.link}
                 target="_blank"
@@ -61,7 +61,11 @@ export default function Product({ product, index }: { product: ProductInterface,
                 <Button variant="outline" className="w-full sm:w-auto">
                   Visit Website
                 </Button>
-              </a>
+              </a>)
+            : (
+              <Button variant="outline" className="w-full sm:w-1/2">
+                Coming Soon ...
+              </Button>
             )}
           </div>
 

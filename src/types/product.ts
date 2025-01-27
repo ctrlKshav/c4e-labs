@@ -8,6 +8,8 @@ export interface ProductInterface {
   themeColor?: string; 
   features: ProductFeatures[];
   link?: string; 
+  productType?: string;
+  productStatus?: string;
   imageSrc?: string;
 }
 

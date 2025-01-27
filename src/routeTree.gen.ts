@@ -11,20 +11,41 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as ProductsImport } from './routes/products'
 import { Route as IndexImport } from './routes/index'
+import { Route as ProductsIndexImport } from './routes/products/index'
+import { Route as ProductsShopifyPluginsImport } from './routes/products/shopify-plugins'
+import { Route as ProductsSaasImport } from './routes/products/saas'
+import { Route as ProductsOthersImport } from './routes/products/others'
 
 // Create/Update Routes
-
-const ProductsRoute = ProductsImport.update({
-  id: '/products',
-  path: '/products',
-  getParentRoute: () => rootRoute,
-} as any)
 
 const IndexRoute = IndexImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ProductsIndexRoute = ProductsIndexImport.update({
+  id: '/products/',
+  path: '/products/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ProductsShopifyPluginsRoute = ProductsShopifyPluginsImport.update({
+  id: '/products/shopify-plugins',
+  path: '/products/shopify-plugins',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ProductsSaasRoute = ProductsSaasImport.update({
+  id: '/products/saas',
+  path: '/products/saas',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ProductsOthersRoute = ProductsOthersImport.update({
+  id: '/products/others',
+  path: '/products/others',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -39,11 +60,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/products': {
-      id: '/products'
+    '/products/others': {
+      id: '/products/others'
+      path: '/products/others'
+      fullPath: '/products/others'
+      preLoaderRoute: typeof ProductsOthersImport
+      parentRoute: typeof rootRoute
+    }
+    '/products/saas': {
+      id: '/products/saas'
+      path: '/products/saas'
+      fullPath: '/products/saas'
+      preLoaderRoute: typeof ProductsSaasImport
+      parentRoute: typeof rootRoute
+    }
+    '/products/shopify-plugins': {
+      id: '/products/shopify-plugins'
+      path: '/products/shopify-plugins'
+      fullPath: '/products/shopify-plugins'
+      preLoaderRoute: typeof ProductsShopifyPluginsImport
+      parentRoute: typeof rootRoute
+    }
+    '/products/': {
+      id: '/products/'
       path: '/products'
       fullPath: '/products'
-      preLoaderRoute: typeof ProductsImport
+      preLoaderRoute: typeof ProductsIndexImport
       parentRoute: typeof rootRoute
     }
   }
@@ -53,37 +95,68 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/products': typeof ProductsRoute
+  '/products/others': typeof ProductsOthersRoute
+  '/products/saas': typeof ProductsSaasRoute
+  '/products/shopify-plugins': typeof ProductsShopifyPluginsRoute
+  '/products': typeof ProductsIndexRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/products': typeof ProductsRoute
+  '/products/others': typeof ProductsOthersRoute
+  '/products/saas': typeof ProductsSaasRoute
+  '/products/shopify-plugins': typeof ProductsShopifyPluginsRoute
+  '/products': typeof ProductsIndexRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
-  '/products': typeof ProductsRoute
+  '/products/others': typeof ProductsOthersRoute
+  '/products/saas': typeof ProductsSaasRoute
+  '/products/shopify-plugins': typeof ProductsShopifyPluginsRoute
+  '/products/': typeof ProductsIndexRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/products'
+  fullPaths:
+    | '/'
+    | '/products/others'
+    | '/products/saas'
+    | '/products/shopify-plugins'
+    | '/products'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/products'
-  id: '__root__' | '/' | '/products'
+  to:
+    | '/'
+    | '/products/others'
+    | '/products/saas'
+    | '/products/shopify-plugins'
+    | '/products'
+  id:
+    | '__root__'
+    | '/'
+    | '/products/others'
+    | '/products/saas'
+    | '/products/shopify-plugins'
+    | '/products/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ProductsRoute: typeof ProductsRoute
+  ProductsOthersRoute: typeof ProductsOthersRoute
+  ProductsSaasRoute: typeof ProductsSaasRoute
+  ProductsShopifyPluginsRoute: typeof ProductsShopifyPluginsRoute
+  ProductsIndexRoute: typeof ProductsIndexRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ProductsRoute: ProductsRoute,
+  ProductsOthersRoute: ProductsOthersRoute,
+  ProductsSaasRoute: ProductsSaasRoute,
+  ProductsShopifyPluginsRoute: ProductsShopifyPluginsRoute,
+  ProductsIndexRoute: ProductsIndexRoute,
 }
 
 export const routeTree = rootRoute
@@ -97,14 +170,26 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/products"
+        "/products/others",
+        "/products/saas",
+        "/products/shopify-plugins",
+        "/products/"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
-    "/products": {
-      "filePath": "products.tsx"
+    "/products/others": {
+      "filePath": "products/others.tsx"
+    },
+    "/products/saas": {
+      "filePath": "products/saas.tsx"
+    },
+    "/products/shopify-plugins": {
+      "filePath": "products/shopify-plugins.tsx"
+    },
+    "/products/": {
+      "filePath": "products/index.tsx"
     }
   }
 }

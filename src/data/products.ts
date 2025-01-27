@@ -29,14 +29,16 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://legaldocs-tau.vercel.app/",
+    productType: "saas",
+    productStatus: "Live",
   },
   {
     id: "product1",
     name: "Zeon",
-    icon: React.createElement(MessageCircle, { className: "h-6 w-6 text-purple-500" }),
+    icon: React.createElement(MessageCircle, { className: "h-6 w-6 text-gray-900" }),
     description:
       "Your personal branding copilot. Zeon helps you write and generate posts, automate content, and analyze performance on LinkedIn.",
-    themeColor: "bg-purple-500",
+    themeColor: "bg-gray-900",
     features: [
       {
         title: "Key Features",
@@ -56,14 +58,16 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://gozeon.com/",
+    productType: "saas",
+    productStatus: "Live",
   },
   {
     id: "product2",
     name: "Resume AI PRO",
-    icon: React.createElement(File, { className: "h-6 w-6 text-green-500" }),
+    icon: React.createElement(File, { className: "h-6 w-6 text-purple-600" }),
     description:
       "Optimize your resume with AI-driven ATS scoring, improvement suggestions, and expert resume reviews.",
-    themeColor: "bg-green-500",
+    themeColor: "bg-purple-600",
     features: [
       {
         title: "Key Features",
@@ -83,6 +87,8 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://resume-site-c4e.vercel.app/",
+    productType: "saas",
+    productStatus: "Live",
   },
   {
     id: "product3",
@@ -110,6 +116,8 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://zeon-8qz.pages.dev/",
+    productType: "saas",
+    productStatus: "Live",
   },
   {
     id: "product4",
@@ -137,6 +145,8 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://analyse-csv-data.vercel.app/",
+    productType: "saas",
+    productStatus: "Live",
   },
   {
     id: "product5",
@@ -164,6 +174,8 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://chromewebstore.google.com/detail/finfriend/ialnbadijnahcjeflecdnkficehiohce",
+    productType: "other",
+    productStatus: "Live",
   },
   {
     id: "product6",
@@ -190,7 +202,8 @@ const products: ProductInterface[] = [
         ],
       },
     ],
-    link: "https://whatsapp.any.do/",
+    productType: "other",
+    productStatus: "Upcoming",
   },
   {
     id: "product7",
@@ -218,20 +231,22 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://oklink.vercel.app/",
+    productType: "saas",
+    productStatus: "Live",
   },
   {
     id: "product8",
     name: "ChatMe - WhatsApp Chat Button",
     icon: React.createElement(MessageCircle, { className: "h-6 w-6 text-yellow-500" }),
     description:
-      "A Shopify plugin to add a WhatsApp chat button to your store, enabling direct customer communication.",
+      "A Shopify to add a WhatsApp chat button to your store, enabling direct customer communication.",
     themeColor: "bg-yellow-500",
     features: [
       {
         title: "Key Features",
         items: [
           "WhatsApp chat integration",
-          "Simple Shopify plugin",
+          "Simple Shopify",
           "Direct customer communication",
         ],
       },
@@ -245,6 +260,8 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://apps.shopify.com/whatsapp-chat-button-4",
+    productType: "shopify plugin",
+    productStatus: "Live",
   },
   {
     id: "product9",
@@ -272,6 +289,8 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://snapcraft.in/",
+    productType: "saas",
+    productStatus: "Live",
   },
   {
     id: "product10",
@@ -286,7 +305,7 @@ const products: ProductInterface[] = [
         items: [
           "Custom catalogue creation",
           "Multiple layout options",
-          "Shopify plugin integration",
+          "Shopify integration",
         ],
       },
       {
@@ -299,6 +318,8 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://apps.shopify.com/pdf-catalog",
+    productType: "shopify plugin",
+    productStatus: "Live",
   },
   {
     id: "product11",
@@ -326,6 +347,8 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://online.smartbrand.one/",
+    productType: "saas",
+    productStatus: "Archived",
   },
   {
     id: "product12",
@@ -353,6 +376,8 @@ const products: ProductInterface[] = [
       },
     ],
     link: "https://apps.shopify.com/tezi-b2b",
+    productType: "shopify plugin",
+    productStatus: "Live",
   },
 ];
 

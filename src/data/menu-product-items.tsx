@@ -3,7 +3,7 @@ import type { MobileMenuSectionItemProps } from "@/types/navbar/mobile-menu"
 
 export const productItems: MobileMenuSectionItemProps[] = [
   {
-    title: "Zeon",
+    title: "Zeon  ",
     href: "https://gozeon.com/",
     description: "AI-powered Personal Branding for LinkedIn",
     icon: <Rocket className="w-5 h-5" />,
