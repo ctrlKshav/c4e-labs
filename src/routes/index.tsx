@@ -3,11 +3,10 @@ import { createFileRoute } from '@tanstack/react-router'
 
 import { HeroSection } from "@/components/landing-page/hero"
 import { FeaturesSection } from "@/components/landing-page/features"
-import { PricingSection } from "@/components/landing-page/pricing"
-import { FaqSection } from "@/components/landing-page/faq-section"
+import AboutUs from '@/components/landing-page/about-us'
 import CTASection  from "@/components/landing-page/cta"
+import Footer from '@/components/landing-page/footer'
 import ProjectManagement from "@/components/real";
-import { AboutUs } from '@/components/landing-page/about-us'
 
 
 
@@ -22,9 +21,8 @@ export default function Home() {
       <AboutUs />
       <ProjectManagement />
       <FeaturesSection />
-      <PricingSection />
-      <FaqSection />
       <CTASection />
+      <Footer />
     </>
   );
 }
