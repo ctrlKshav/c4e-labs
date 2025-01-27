@@ -1,4 +1,5 @@
-﻿import Product from '@/components/products/product'
+﻿import { GradientSeparator } from '@/components/gradient-separator'
+import Product from '@/components/products/product'
 import products from '@/data/products'
 import { createFileRoute } from '@tanstack/react-router'
 
@@ -8,9 +9,9 @@ export const Route = createFileRoute('/products')({
 
 export default function Products() {
   return (
-    <div className="space-y-32">
-      {products.slice(0,5).map((product) => (
-        <Product key={product.name} product={product} />
+    <div className="">
+      {products.map((product, index) => (
+        <Product key={product.id} product={product} index={index} />
       ))}
     </div>
   )

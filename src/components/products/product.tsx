@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Home, MessageSquare, Bell, MoreVertical, Plus, Users, Headphones, ListTodo, Send } from "lucide-react";
 import { ProductFeatures, ProductInterface } from "@/types/product";
 
-export default function Product({ product }: { product: ProductInterface }) {
+export default function Product({ product, index }: { product: ProductInterface, index: number }) {
   return (
-    <div className="relative overflow-hidden">
+    <div className={`relative overflow-hidden ${index % 2 === 0 ?  "bg-gradient-radial-stripe"  : "bg-gradient-radial-quad" }`}>
       {/* Background circle */}
       {product.themeColor && (
         <div
