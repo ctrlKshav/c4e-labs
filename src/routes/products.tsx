@@ -1,5 +1,4 @@
-﻿import { GradientSeparator } from '@/components/gradient-separator'
-import Product from '@/components/products/product'
+﻿import Product from '@/components/products/product'
 import products from '@/data/products'
 import { createFileRoute } from '@tanstack/react-router'
 
