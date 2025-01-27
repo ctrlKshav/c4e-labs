@@ -32,26 +32,6 @@ const features: Feature[] = [
   },
 ]
 
-interface VerticalLineProps {
-  className?: string
-}
-
-const VerticalLine: React.FC<VerticalLineProps> = ({ className }) => (
-  <motion.div
-    className={`hidden md:block absolute right-[-1rem] w-[2px] bg-primary ${className}`}
-    initial={{ height: 0, top: "50%" }}
-    animate={{
-      height: ["0%", "100%", "0%"],
-      top: ["50%", "0%", "50%"],
-    }}
-    transition={{
-      duration: 3,
-      ease: "easeInOut",
-      repeat: Number.POSITIVE_INFINITY,
-    }}
-  />
-)
-
 const Features: React.FC = () => {
   return (
     <section className="py-24 px-4 bg-background">
@@ -77,7 +57,6 @@ const Features: React.FC = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="relative text-center bg-primary rounded-md p-6"
             >
-              {index < features.length - 1 && <VerticalLine/>}
               <div className="mb-6 flex justify-center">
                 <motion.img
                   src={feature.image}

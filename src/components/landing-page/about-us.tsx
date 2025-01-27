@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react"
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-background via-card to-background">
+    <section className="py-12 sm:py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-tr from-slate-300/50 from-40% via-background via-80% to-card to-100%">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
