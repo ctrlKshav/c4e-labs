@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="relative py-32">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <div className="mx-auto flex max-w-screen-lg flex-col gap-6">
+            <div className="mx-auto flex max-w-screen-lg flex-col gap-12">
               <h1 className="text-4xl font-extrabold lg:text-7xl ">
                 Empowering Innovation with C4E Labs
               </h1>
@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
             <Button
               size="lg"
-              className="mt-8"
+              className="mt-8 sm:mt-16"
             >
               Explore Our Solutions
             </Button>
