@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { createFileRoute } from '@tanstack/react-router'
 
-import { HeroSection } from "@/components/landing-page/hero"
-import { FeaturesSection } from "@/components/landing-page/features"
+import Hero from "@/components/landing-page/hero"
+import Features from "@/components/landing-page/features"
 import AboutUs from '@/components/landing-page/about-us'
 import CTASection  from "@/components/landing-page/cta"
 import Footer from '@/components/landing-page/footer'
@@ -17,10 +17,10 @@ export const Route = createFileRoute('/')({
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <Hero />
       <AboutUs />
       <ProjectManagement />
-      <FeaturesSection />
+      <Features />
       <CTASection />
       <Footer />
     </>

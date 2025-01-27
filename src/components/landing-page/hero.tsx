@@ -4,7 +4,7 @@ import React from "react"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 
-const HeroC4E = () => {
+const Hero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden bg-background">
       {/* Animated gradient background */}
@@ -38,4 +38,4 @@ const HeroC4E = () => {
   )
 }
 
-export { HeroC4E as HeroSection }
+export default Hero;

@@ -52,7 +52,7 @@
 
 @layer utilities {
   .bg-gradient-radial-stripe {
-    background: radial-gradient(circle at top left, #9089fc, transparent 30%),
+    background: radial-gradient(circle at top left, #80b5f2, transparent 30%),
       radial-gradient(circle at top right, #09ba82, transparent 30%),
       radial-gradient(at bottom left, #09ba82, transparent 30%),
       radial-gradient(at bottom right, #80b5ff, transparent 30%);
