@@ -6,7 +6,7 @@ import Features from "@/components/landing-page/features"
 import AboutUs from '@/components/landing-page/about-us'
 import CTA  from "@/components/landing-page/cta"
 import Footer from '@/components/landing-page/footer'
-import ProductsManagement from '@/components/landing-page/products-overview'
+import ProductsOverview from '@/components/landing-page/products-overview'
 
 
 export const Route = createFileRoute('/')({
@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Hero />
       <AboutUs />
-      <ProductsManagement />
+      <ProductsOverview />
       <Features />
       <CTA />
       <Footer />

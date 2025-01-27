@@ -59,7 +59,7 @@ const ProductShowcase = () => (
 );
 
 // Main Component
-export default function ProductsManagement() {
+export default function ProductOverview() {
   return (
     <div className="relative overflow-hidden bg-gradient-two-corners-bottom min-h-screen">
       <div className="absolute left-0 top-0 h-[800px] w-[800px] translate-x-[-30%] translate-y-[-15%] rounded-full bg-primary/90 hidden lg:block" />
