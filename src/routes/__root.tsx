@@ -1,19 +1,21 @@
-import * as React from 'react'
-import { Link, Outlet, createRootRoute } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/router-devtools'
+import * as React from "react";
+import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
+import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 
-import Navbar from '@/components/navbar'
+import Navbar from "@/components/navbar";
 
 export const Route = createRootRoute({
   component: RootComponent,
-})
+});
 
 function RootComponent() {
   return (
     <>
       <Navbar />
       <Outlet />
-      <TanStackRouterDevtools position="bottom-right" />
+      {process.env.NODE_ENV === "development" && (
+        <TanStackRouterDevtools position="bottom-right" />
+      )}
     </>
-  )
+  );
 }
