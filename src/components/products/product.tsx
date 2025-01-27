@@ -1,7 +1,7 @@
 ﻿import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Home, MessageSquare, Bell, MoreVertical, Plus, Users, Headphones, ListTodo, Send } from "lucide-react";
-import { ProductInterface } from "@/types/product";
+import { ProductFeatures, ProductInterface } from "@/types/product";
 
 export default function Product({ product }: { product: ProductInterface }) {
   return (
@@ -38,12 +38,12 @@ export default function Product({ product }: { product: ProductInterface }) {
 
             {/* Features */}
             <div className="space-y-4">
-              {product.features.map((feature, index) => (
+              {product.features.map((feature: ProductFeatures, index: number) => (
                 <div key={index}>
                   <h3 className="text-lg font-semibold">{feature.title}</h3>
                   <ul className="list-disc pl-6 text-gray-600">
-                    {feature.items.map((item, idx) => (
-                      <li key={idx}>{item}</li>
+                    {feature.items.map((item: string, index: number) => (
+                      <li key={index}>{item}</li>
                     ))}
                   </ul>
                 </div>

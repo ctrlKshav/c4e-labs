@@ -6,10 +6,12 @@ export interface ProductInterface {
   icon: ReactNode;
   description: string;
   themeColor?: string; 
-  features: {
-    title: string;
-    items: string[];
-  }[];
+  features: ProductFeatures[];
   link?: string; 
   imageSrc?: string;
+}
+
+export interface ProductFeatures {
+  title: string;
+  items: string[];
 }
