@@ -1,7 +1,7 @@
 ﻿import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Home, MessageSquare, Bell, MoreVertical, Plus, Users, Headphones, ListTodo, Send } from "lucide-react"
-import type { Product } from "@/types/product"
+import type { Product } from "@/types/products/product"
 
 interface ProductProps {
   product: Product & {

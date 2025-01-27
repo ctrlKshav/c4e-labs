@@ -1,5 +1,5 @@
 ﻿import Product from '@/components/products/product'
-import { products } from '@/data/products'
+import { products } from '@/data/products/products'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/products')({

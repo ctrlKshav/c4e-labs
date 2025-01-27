@@ -17,7 +17,7 @@
       channels: ["contract-review", "legal-team", "compliance", "document-drafts"],
       imageSrc: "/",
     },
-    {
+    { 
       name: "Zeon",
       badge: "AI DEVELOPMENT PLATFORM",
       title: "Build and deploy AI applications faster.",
