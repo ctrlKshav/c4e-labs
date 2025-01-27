@@ -34,7 +34,7 @@ const features: Feature[] = [
 
 const Features: React.FC = () => {
   return (
-    <section className="py-24 px-4  bg-gradient-two-corners-top">
+    <section className="py-24 px-4  bg-gradient-radial-quad">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

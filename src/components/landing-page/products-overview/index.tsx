@@ -53,7 +53,7 @@ const ProductShowcase = () => (
 
 export default function ProductsManagement() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden bg-gradient-two-corners-bottom">
       <div className="absolute left-0 top-0 h-[800px] w-[800px] translate-x-[-30%] translate-y-[-15%] rounded-full bg-primary/90" />
       <div className="container relative mx-auto px-4 py-24">
         <div className="grid gap-12 lg:grid-cols-2">

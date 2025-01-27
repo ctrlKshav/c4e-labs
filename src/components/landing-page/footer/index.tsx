@@ -36,7 +36,7 @@ const SocialLinks = () => {
 const Footer = () => {
   return (
     <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 pt-12 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand and Social Links */}
           <FooterCard title="C4E Labs">

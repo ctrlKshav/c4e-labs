@@ -4,7 +4,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import Hero from "@/components/landing-page/hero"
 import Features from "@/components/landing-page/features"
 import AboutUs from '@/components/landing-page/about-us'
-import CTASection  from "@/components/landing-page/cta"
+import CTA  from "@/components/landing-page/cta"
 import Footer from '@/components/landing-page/footer'
 import ProductsManagement from '@/components/landing-page/products-overview'
 
@@ -20,7 +20,7 @@ export default function Home() {
       <AboutUs />
       <ProductsManagement />
       <Features />
-      <CTASection />
+      <CTA />
       <Footer />
     </>
   );

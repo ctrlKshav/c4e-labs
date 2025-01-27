@@ -6,9 +6,8 @@ import { ArrowRight } from "lucide-react";
 
 export default function CTASection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-radial-quad animate-gradient-slow">
-
-      <div className="container mx-auto px-4 py-24">
+    <section className="relative overflow-hidden bg-gradient-radial-stripe">
+      <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <motion.div
@@ -18,16 +17,16 @@ export default function CTASection() {
             className="max-w-xl"
           >
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-              Discover C4E Labs.
+              Powering Ideas at C4E Labs.
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Explore our products and services and become part of our fam!
+              Explore innovative micro SaaS projects and transform your ideas into reality.
             </p>
             <Button
               className="bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2"
               size="lg"
             >
-              Explore Now
+              Get Started
               <ArrowRight className="h-4 w-4" />
             </Button>
           </motion.div>
