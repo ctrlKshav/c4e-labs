@@ -4,8 +4,8 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import ProductTab from "@/components/landing-page/products-management/product-tab"
-import TopBar from "@/components/landing-page/products-management/topbar"
+import ProductTab from "@/components/landing-page/products-overview/product-tab"
+import TopBar from "@/components/landing-page/products-overview/topbar"
 import products from "@/data/products"
 
 // Components

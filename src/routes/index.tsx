@@ -6,7 +6,7 @@ import Features from "@/components/landing-page/features"
 import AboutUs from '@/components/landing-page/about-us'
 import CTASection  from "@/components/landing-page/cta"
 import Footer from '@/components/landing-page/footer'
-import ProductsManagement from '@/components/landing-page/products-management'
+import ProductsManagement from '@/components/landing-page/products-overview'
 
 
 export const Route = createFileRoute('/')({

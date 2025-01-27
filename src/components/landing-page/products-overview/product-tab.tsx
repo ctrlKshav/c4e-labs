@@ -1,6 +1,6 @@
 ﻿import { Tabs, TabsContent } from "@/components/ui/tabs";
 import { Product } from "@/types/product";
-import FeatureCard from "@/components/landing-page/products-management/feature-card";
+import FeatureCard from "@/components/landing-page/products-overview/feature-card";
 import { Button } from "@/components/ui/button"; // Assuming you have a Button component
 
 const ProductTab = ({ product }: { product: Product }) => (
