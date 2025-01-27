@@ -22,7 +22,7 @@ const features: Feature[] = [
     title: "AI-Powered Innovation",
     description:
       "Leverage cutting-edge AI and automation to build intelligent, scalable solutions tailored for the future.",
-    image: "/api/placeholder/128/128",
+    image: "/",
   },
   {
     title: "User-Centric Design",
@@ -68,7 +68,7 @@ const Features: React.FC = () => {
             strategy, and execution.
           </p>
         </motion.div>
-        <div className="grid md:grid-cols-3 gap-8 relative">
+        <div className="grid md:grid-cols-3 gap-16 relative">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -77,12 +77,12 @@ const Features: React.FC = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="relative text-center bg-primary rounded-md p-6"
             >
-              {index < features.length - 1 && <VerticalLine />}
+              {index < features.length - 1 && <VerticalLine/>}
               <div className="mb-6 flex justify-center">
                 <motion.img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-32 h-32 object-contain text-card"
+                  className="w-32 h-32 object-cover text-card"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.2 }}
                 />

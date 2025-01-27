@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react"
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 px-4 md:px-6 lg:px-8 bg-background">
+    <section className="py-12 sm:py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-background via-card to-background">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,14 +35,14 @@ const AboutUs: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="md:sticky md:top-24"
           >
-            <Card className="bg-primary text-background">
-              <CardHeader className="pb-0">
+            <Card className="bg-primary text-primary-foreground">
+              <CardHeader>
                 <CardTitle className="text-xl sm:text-2xl font-bold">Our Mission</CardTitle>
-                <CardDescription className="text-background/50">
+                <CardDescription className="text-primary-foreground/80">
                   Empowering businesses with innovative solutions
                 </CardDescription>
               </CardHeader>
-              <CardContent className="pt-4 sm:pt-6 text-card">
+              <CardContent>
                 <p className="mb-4 text-sm sm:text-base">
                   At C4E Labs, we're passionate about creating innovative solutions that address real-world challenges
                   across various industries. Our team of experts combines creativity, technical expertise, and business
@@ -62,12 +62,15 @@ const AboutUs: React.FC = () => {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.3, delay: 0.4 + index * 0.1 }}
                     >
-                      <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 mr-2 text-background flex-shrink-0" />
+                      <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 mr-2 text-primary-foreground flex-shrink-0" />
                       {item}
                     </motion.li>
                   ))}
                 </ul>
-                <Button variant={"secondary"} className="shadow-md w-full sm:w-auto">
+                <Button
+                  variant="secondary"
+                  className="shadow-md w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                >
                   Learn More About Us
                 </Button>
               </CardContent>
