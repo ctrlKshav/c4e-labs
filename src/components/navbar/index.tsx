@@ -120,7 +120,7 @@ const Navbar: React.FC = () => {
            <div className="lg:hidden order-last ml-4">
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
-                <Button variant="secondary" size="icon">
+                <Button variant="default" size="icon">
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>

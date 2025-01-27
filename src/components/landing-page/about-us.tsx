@@ -9,36 +9,41 @@ import { ArrowRight } from "lucide-react"
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="py-16 px-4 md:px-6 lg:px-8 bg-background">
+    <section className="py-12 sm:py-16 px-4 md:px-6 lg:px-8 bg-background">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
-          <Badge className="mb-4" variant="secondary">
+          <Badge className="mb-4" variant="default">
             About Us
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Innovating the Future of SaaS</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            Innovating the Future of SaaS
+          </h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             C4E Labs is a dynamic venture studio, bringing cutting-edge micro SaaS products to life.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-start">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="md:sticky md:top-24"
           >
-            <Card>
+            <Card className="bg-primary text-background">
               <CardHeader className="pb-0">
-                <CardTitle className="text-2xl font-bold">Our Mission</CardTitle>
-                <CardDescription>Empowering businesses with innovative solutions</CardDescription>
+                <CardTitle className="text-xl sm:text-2xl font-bold">Our Mission</CardTitle>
+                <CardDescription className="text-background/50">
+                  Empowering businesses with innovative solutions
+                </CardDescription>
               </CardHeader>
-              <CardContent className="pt-6">
-                <p className="text-foreground mb-4">
+              <CardContent className="pt-4 sm:pt-6 text-card">
+                <p className="mb-4 text-sm sm:text-base">
                   At C4E Labs, we're passionate about creating innovative solutions that address real-world challenges
                   across various industries. Our team of experts combines creativity, technical expertise, and business
                   acumen to bring cutting-edge products to market.
@@ -52,17 +57,19 @@ const AboutUs: React.FC = () => {
                   ].map((item, index) => (
                     <motion.li
                       key={index}
-                      className="flex items-center text-foreground"
+                      className="flex items-center text-sm sm:text-base"
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.3, delay: 0.4 + index * 0.1 }}
                     >
-                      <ArrowRight className="h-5 w-5 mr-2 text-primary" />
+                      <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 mr-2 text-background flex-shrink-0" />
                       {item}
                     </motion.li>
                   ))}
                 </ul>
-                <Button>Learn More About Us</Button>
+                <Button variant={"secondary"} className="shadow-md w-full sm:w-auto">
+                  Learn More About Us
+                </Button>
               </CardContent>
             </Card>
           </motion.div>
@@ -76,7 +83,7 @@ const AboutUs: React.FC = () => {
             <img
               src="/placeholder.svg?height=400&width=600"
               alt="C4E Labs Team"
-              className="rounded-lg shadow-xl"
+              className="rounded-lg shadow-xl w-full h-auto"
               width={600}
               height={400}
             />
@@ -86,8 +93,8 @@ const AboutUs: React.FC = () => {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.8 }}
             >
-              <p className="text-2xl font-bold text-foreground">10+</p>
-              <p className="text-sm text-muted-foreground">Innovative Products</p>
+              <p className="text-xl sm:text-2xl font-bold text-foreground">10+</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">Innovative Products</p>
             </motion.div>
           </motion.div>
         </div>

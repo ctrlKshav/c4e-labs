@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand and Social Links */}
           <FooterCard title="C4E Labs">
-            <p className="text-muted-foreground mb-4">Innovating the future of SaaS.</p>
+            <p className="text-foreground mb-4">Innovating the future of SaaS.</p>
             <SocialLinks />
           </FooterCard>
 
@@ -54,7 +54,7 @@ const Footer = () => {
                 "All Products",
               ].map((product, idx) => (
                 <li key={idx}>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
+                  <a href="#" className="text-foreground hover:text-primary">
                     {product}
                   </a>
                 </li>
@@ -67,7 +67,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {["About Us", "Careers", "Blog", "Contact"].map((item, idx) => (
                 <li key={idx}>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
+                  <a href="#" className="text-foreground hover:text-primary">
                     {item}
                   </a>
                 </li>
@@ -77,7 +77,7 @@ const Footer = () => {
 
           {/* Newsletter Subscription */}
           <FooterCard title="Stay Updated">
-            <p className="text-muted-foreground mb-4">
+            <p className="text-foreground mb-4">
               Subscribe to our newsletter for the latest updates and innovations.
             </p>
             <form

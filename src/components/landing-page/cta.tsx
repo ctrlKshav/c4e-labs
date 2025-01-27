@@ -40,13 +40,18 @@ export default function CTASection() {
 
   return (
     <section className="relative ">
-      {/* Subtle Gradient Background */}
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 bg-gradient-radial-stripe animate-gradient-slow ">
+        <div className="absolute inset-0 bg-background/50" />
+        {/* Subtle Gradient Background */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-background from-60% via-primary via-60% to-secondary to-100%"
+        className="absolute inset-0 bg-gradient-to-br from-transparent from-70% via-card via-80% to-secondary to-100%"
         style={{
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)",
         }}
       />
+      </div>
+      
 
       <div className="container relative mx-auto px-4 py-24">
         <div className="grid gap-12 lg:grid-cols-2">
@@ -57,7 +62,7 @@ export default function CTASection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <Badge className="mb-6">Empowering SaaS Innovation</Badge>
+              <Badge className="mb-6" variant={"secondary"}>Empowering SaaS Innovation</Badge>
               <h1 className="mb-6 text-5xl font-bold tracking-tight text-primary lg:text-7xl">
                 Build. Grow. Transform.
               </h1>
@@ -73,7 +78,7 @@ export default function CTASection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Button size="lg" className="group">
+              <Button size="lg" className="group shadow-md" variant={'secondary'}>
                 Discover Our Products
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
