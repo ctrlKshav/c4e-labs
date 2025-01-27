@@ -1,9 +1,9 @@
 ﻿import { Tabs, TabsContent } from "@/components/ui/tabs";
-import { Product } from "@/types/product";
+import { ProductInterface } from "@/types/product";
 import FeatureCard from "@/components/landing-page/products-overview/feature-card";
 import { Button } from "@/components/ui/button"; // Assuming you have a Button component
 
-const ProductTab = ({ product }: { product: Product }) => (
+const ProductTab = ({ product }: { product: ProductInterface }) => (
   <TabsContent value={product.id} className="p-4">
     <div className="flex items-center gap-2 mb-4">
       {product.icon}
