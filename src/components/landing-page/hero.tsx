@@ -26,12 +26,14 @@ const Hero = () => {
                 expertise in software development, AI-driven technologies, and creative problem-solving.
               </p>
             </div>
-            <Button
-              size="lg"
-              className="mt-8 sm:mt-16"
-            >
-              <Link to='/products'>Explore Our Solutions</Link>
-            </Button>
+            <Link to='/products'>
+              <Button
+                size="lg"
+                className="mt-8 sm:mt-16"
+              >
+                Explore Our Solutions
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

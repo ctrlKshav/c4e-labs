@@ -24,16 +24,16 @@ const HeroSection = () => (
       </p>
     </div>
     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-      <Button size="lg" variant="secondary" className="w-full sm:w-auto">
-          <Link to="/products">
+        <Link to="/products">
+        <Button variant="secondary" className="w-1/2 sm:w-auto">
             Explore Our Products
-          </Link>
-      </Button>
-      <Button size="lg" variant="outline" className="w-full sm:w-auto">
-        <Link to="/contact">
-          Get in Touch
+        </Button>
         </Link>
-      </Button>
+      <Link to="/contact">
+        <Button  variant="outline" className="w-1/2  sm:w-auto">
+          Get in Touch
+        </Button>
+      </Link>
     </div>
   </div>
 );

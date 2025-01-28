@@ -69,14 +69,14 @@ const AboutUs: React.FC = () => {
                     </motion.li>
                   ))}
                 </ul>
-                <Button
-                  variant="secondary"
-                  className="shadow-md w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-                >
-                  <Link to="/">
-                    Learn More About Us
-                  </Link>
-                </Button>
+                <Link to="/">
+                  <Button
+                    variant="secondary"
+                    className="shadow-md w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                  >
+                      Learn More About Us
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </motion.div>

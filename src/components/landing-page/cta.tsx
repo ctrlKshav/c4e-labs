@@ -23,17 +23,17 @@ export default function CTASection() {
             <p className="text-lg text-muted-foreground mb-8">
               Explore innovative micro SaaS projects and transform your ideas into reality.
             </p>
-            <Button
-              className="bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2"
-              size="lg"
-            >
+            <Link to="/products">
+              <Button
+                className="bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2"
+                size="lg"
+              >
 
-              <Link to="/products">
-                Get Started
-              </Link>
-              
-              <ArrowRight className="h-4 w-4" />
-            </Button>
+                  Get Started
+                
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Right Column - Image */}
