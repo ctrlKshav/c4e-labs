@@ -85,7 +85,7 @@ const AboutUs: React.FC = () => {
             className="relative"
           >
             <img
-              src="/placeholder.svg?height=400&width=600"
+              src="https://placehold.co/300"
               alt="C4E Labs Team"
               className="rounded-lg shadow-xl w-full h-auto"
               width={600}

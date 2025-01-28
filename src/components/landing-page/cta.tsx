@@ -40,7 +40,7 @@ export default function CTASection() {
           >
             <div className="relative aspect-square w-full max-w-md mx-auto">
               <img
-                src="/c4e-labs-showcase.jpg"
+                src="https://placehold.co/400"
                 alt="C4E Labs showcase visualization"
                 className="w-full h-full object-cover rounded-2xl"
               />
