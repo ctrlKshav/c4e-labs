@@ -10,7 +10,7 @@ import { Link } from "@tanstack/react-router"
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="py-12 sm:py-12 px-4 md:px-6 lg:px-8 bg-gradient-radial-quad">
+    <section className="py-12 sm:py-12 px-4 md:px-6 lg:px-8 bg-gradient-radial-quad" id="about-us">
       
       <div className="max-w-6xl mx-auto">
         <motion.div
