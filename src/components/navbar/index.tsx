@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
                       <span className="flex items-center text-base">Products</span>
                     </Link>
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent className="bg-background">
+                  <NavigationMenuContent>
 
                     <MenuSection items={products} />
                     
