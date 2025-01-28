@@ -11,16 +11,16 @@ import { Link } from "@tanstack/react-router"
 
 // Hero Section Component
 const HeroSection = () => (
-  <div className="flex flex-col justify-center space-y-4 sm:space-y-6 md:space-y-8">
+  <div className="flex flex-col justify-center space-y-4 sm:space-y-6 md:space-y-8 ">
     <div>
       <Badge className="mb-3 sm:mb-4 bg-card text-foreground hover:bg-slate-100">
         VENTURE STUDIO
       </Badge>
-      <h1 className="mb-3 sm:mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+      <h1 className="mb-3 sm:mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-card blob1:text-foreground">
         Innovate, Create, and Scale with C4E Labs
       </h1>
-      <p className="text-base sm:text-lg md:text-xl text-foreground/80">
-        We're the umbrella for cutting-edge micro SaaS products, empowering businesses across industries with innovative solutions.
+      <p className="text-base sm:text-lg md:text-xl text-card blob1:text-foreground/80">
+        We're an umbrella of cutting-edge micro SaaS products, empowering businesses across industries with innovative solutions.
       </p>
     </div>
     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -63,7 +63,7 @@ const ProductShowcase = () => (
 export default function ProductOverview() {
   return (
     <div className="relative overflow-hidden bg-gradient-two-corners-right min-h-screen">
-      <div className="absolute left-0 top-0 h-[800px] w-[800px] translate-x-[-30%] translate-y-[-15%] rounded-full bg-primary/90 hidden lg:block" />
+      <div className="absolute left-0 top-0 h-[800px] w-[800px] translate-x-[-30%] translate-y-[-15%] rounded-full bg-primary/90" />
       
       <div className="container relative mx-auto px-3 sm:px-4 py-8 sm:py-12 md:py-16 lg:py-24">
         <div className="grid gap-8 sm:gap-12 lg:grid-cols-2">
@@ -71,10 +71,7 @@ export default function ProductOverview() {
             <HeroSection />
           </div>
           
-          {/* Mobile decorative circle */}
-          <div className="lg:hidden relative h-32 sm:h-48 w-full my-4">
-            <div className="absolute inset-0 bg-primary/90 rounded-full transform scale-150 translate-x-1/4" />
-          </div>
+         
           
           <div className="relative">
             <ProductShowcase />
