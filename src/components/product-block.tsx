@@ -24,7 +24,7 @@ export default function ProductBlock({ product, index }: { product: ProductInter
 
   return (
     <div
-      className={`relative overflow-hidden text-background min-[512px]:text-foreground ${index % 2 === 0 ? "bg-gradient-radial-stripe" : "bg-gradient-radial-quad"}`}
+      className={`relative overflow-hidden text-background blob2:text-foreground ${index % 2 === 0 ? "bg-gradient-radial-stripe" : "bg-gradient-radial-quad"}`}
     >
       {/* Background circle */}
       {product.themeColor && (
@@ -54,8 +54,8 @@ export default function ProductBlock({ product, index }: { product: ProductInter
             <div className="space-y-4 ">
               {product.features.map((feature: ProductFeatures, index: number) => (
                 <div key={index}>
-                  <h3 className="text-lg font-semibold">{feature.title}</h3>
-                  <ul className="list-disc pl-6 text-gray-100/80 blob1:text-gray-700/80">
+                  <h3 className="text-lg font-semibold text-foreground">{feature.title}</h3>
+                  <ul className="list-disc pl-6  text-gray-700/80">
                     {feature.items.map((item: string, index: number) => (
                       <li key={index}>{item}</li>
                     ))}
