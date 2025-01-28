@@ -1,20 +1,22 @@
 ﻿// components/navbar/MobileLinkItem.tsx
 import React from "react"
-import type { MobileMenuSectionItemProps } from "@/types/navbar/mobile-menu"
+import { MenuSectionItemProps } from "@/types/navbar"
 
-export const MobileSectionItem: React.FC<{ item: MobileMenuSectionItemProps }> = ({ item }) => {
+export const MobileSectionItem: React.FC<MenuSectionItemProps> = (
+  ({ title, href, icon, children, ...props }) => {
   return (
     <a 
-      href={item.href} 
+      href={href} 
       className="flex items-center gap-3 py-2 hover:bg-gray-100" 
-      target={item.href.startsWith('http') ? "_blank" : undefined}
-      rel={item.href.startsWith('http') ? "noopener noreferrer" : undefined}
+      target={href.startsWith('http') ? "_blank" : undefined}
+      rel={href.startsWith('http') ? "noopener noreferrer" : undefined}
     >
-      {item.icon}
+      {icon}
       <div>
-        <div className="font-medium text-base">{item.title}</div>
-        <p className="text-sm text-gray-500 mt-1">{item.description}</p>
+        <div className="font-medium text-base">{title}</div>
+        <p className="text-sm text-gray-500 mt-1">{children}</p>
       </div>
     </a>
   )
 } 
+)

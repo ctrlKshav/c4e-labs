@@ -1,18 +1,17 @@
 ﻿import React from "react"
 import { NavigationMenuLink } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
-import type { MenuSectionItemProps } from "@/types/navbar/menu"
+import { MenuSectionItemProps } from "@/types/navbar"
 
-export const MenuSectionItem = React.forwardRef<HTMLAnchorElement, MenuSectionItemProps>(
-  ({ className, title, children, icon, ...props }, ref) => {
+
+export const MenuSectionItem : React.FC<MenuSectionItemProps> = (
+  ({ title, children, icon, ...props }) => {
     return (
       <li>
         <NavigationMenuLink asChild>
           <a
-            ref={ref}
             className={cn(
               "group block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-primary hover:text-background focus:bg-primary focus:text-accent-foreground",
-              className
             )}
             {...props}
           >

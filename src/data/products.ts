@@ -1,6 +1,6 @@
 ﻿import React from "react";
 import { ProductInterface } from "@/types/product";
-import { FileSpreadsheet, Users, ShoppingCart, Pencil, MessageCircle, Link, BookOpen, Clipboard, Bell, Mic, Image, FileText, Scale, File, BriefcaseBusiness } from "lucide-react";
+import { FileSpreadsheet, Users, Rocket, Pencil, MessageCircle, Link, BookOpen, Clipboard, Bell, Mic, Image, FileText, Scale, File, BriefcaseBusiness } from "lucide-react";
 
 const products: ProductInterface[] = [
   {
@@ -35,10 +35,10 @@ const products: ProductInterface[] = [
   {
     id: "product1",
     name: "Zeon",
-    icon: React.createElement(MessageCircle, { className: "h-6 w-6 text-gray-900" }),
+    icon: React.createElement(MessageCircle, { className: "h-6 w-6 text-purple-700" }),
     description:
       "Your personal branding copilot. Zeon helps you write and generate posts, automate content, and analyze performance on LinkedIn.",
-    themeColor: "bg-gray-900",
+    themeColor: "bg-purple-700",
     features: [
       {
         title: "Key Features",
@@ -64,10 +64,10 @@ const products: ProductInterface[] = [
   {
     id: "product2",
     name: "Resume AI PRO",
-    icon: React.createElement(File, { className: "h-6 w-6 text-purple-600" }),
+    icon: React.createElement(File, { className: "h-6 w-6 text-violet-500" }),
     description:
       "Optimize your resume with AI-driven ATS scoring, improvement suggestions, and expert resume reviews.",
-    themeColor: "bg-purple-600",
+    themeColor: "bg-violet-500",
     features: [
       {
         title: "Key Features",

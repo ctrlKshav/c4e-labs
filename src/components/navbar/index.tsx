@@ -13,7 +13,7 @@ import {
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 
-import { productItems, contentItems } from "@/data/menu-product-items"
+import products from "@/data/products"
 
 import { MobileItem } from "@/components/navbar/mobile-menu/Item"
 import { MobileSection } from "@/components/navbar/mobile-menu/Section"
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="bg-background">
 
-                    <MenuSection title="Products" items={productItems} />
+                    <MenuSection items={products} />
                     
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -139,7 +139,7 @@ const Navbar: React.FC = () => {
                 {/* Scrollable Menu Content */}
                 <div className="flex-grow overflow-y-auto">
                   <div className="space-y-2 pb-20">
-                    <MobileSection title="Products" items={productItems} />
+                    <MobileSection title="Products" items={products} />
 
                     {/* Direct Links */}
                     <div className="border-b">
