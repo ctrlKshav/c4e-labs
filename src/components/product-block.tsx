@@ -1,16 +1,15 @@
 ﻿import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Home, MessageSquare, Bell, MoreVertical, Plus, Users, Headphones, ListTodo, Send } from "lucide-react";
 import { ProductFeatures, ProductInterface } from "@/types/product";
 
-export default function Product({ product, index }: { product: ProductInterface, index: number }) {
+export default function ProductBlock({ product, index }: { product: ProductInterface, index: number }) {
   return (
     <div className={`relative overflow-hidden text-background min-[512px]:text-foreground ${index % 2 === 0 ?  "bg-gradient-radial-stripe"  : "bg-gradient-radial-quad" }`}>
       {/* Background circle */}
       {product.themeColor && (
         <div
           className={`absolute right-0 top-0 h-[800px] w-[800px] translate-x-1/3 translate-y-[-15%] rounded-full opacity-90 ${product.themeColor}`}
-        />
+        />  
       )}
 
       <div className="container relative mx-auto px-4 py-24">

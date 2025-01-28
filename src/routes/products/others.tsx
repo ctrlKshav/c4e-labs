@@ -1,4 +1,4 @@
-﻿import Product from '@/components/products/product'
+﻿import ProductBlock from '@/components/product-block'
 import products from '@/data/products'
 import { createFileRoute } from '@tanstack/react-router'
 
@@ -15,7 +15,7 @@ export default function OtherProducts() {
   return (
     <div className="">
       {otherProducts.map((product, index) => (
-        <Product key={product.id} product={product} index={index} />
+        <ProductBlock key={product.id} product={product} index={index} />
       ))}
     </div>
   )
