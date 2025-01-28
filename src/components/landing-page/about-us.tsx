@@ -88,7 +88,7 @@ const AboutUs: React.FC = () => {
             className="relative"
           >
             <img
-              src="https://placehold.co/300"
+              src="/src/assets/images/AboutUs1.jpg"
               alt="C4E Labs Team"
               className="rounded-lg shadow-xl w-full h-auto"
               width={600}
@@ -100,7 +100,7 @@ const AboutUs: React.FC = () => {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.8 }}
             >
-              <p className="text-xl sm:text-2xl font-bold text-foreground">10+</p>
+              <p className="text-xl sm:text-2xl font-bold text-foreground ">10+</p>
               <p className="text-xs sm:text-sm text-muted-foreground">Innovative Products</p>
             </motion.div>
           </motion.div>
