@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import type { ProductFeatures, ProductInterface } from "@/types/productTypes"
 import { useRef, useEffect, useState } from "react"
 
-export default function ProductBlock({ product, index }: { product: ProductInterface; index: number }) {
+export default function ProductSection({ product, index }: { product: ProductInterface; index: number }) {
   const [isScrollable, setIsScrollable] = useState(false)
   const imageRef = useRef<HTMLImageElement>(null)
 
@@ -79,7 +79,7 @@ export default function ProductBlock({ product, index }: { product: ProductInter
           </div>
 
           {/* Right column - Image */}
-          <div className="relative aspect-square w-full max-w-[500px] overflow-hidden rounded-lg shadow-xl">
+          <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-xl">
             <div className="h-full overflow-y-auto">
               <img
                 ref={imageRef}
