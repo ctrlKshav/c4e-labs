@@ -4,6 +4,7 @@ import type React from "react"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Link } from "@tanstack/react-router"
 
 interface Feature {
   title: string
@@ -16,19 +17,19 @@ const features: Feature[] = [
     title: "Agile Development Process",
     description:
       "We prioritize iterative and adaptive methodologies, ensuring that our products evolve with market needs.",
-    image: "/api/placeholder/128/128",
+    image: "https://placehold.co/250",
   },
   {
     title: "AI-Powered Innovation",
     description:
       "Leverage cutting-edge AI and automation to build intelligent, scalable solutions tailored for the future.",
-    image: "/",
+    image: "https://placehold.co/250",
   },
   {
     title: "User-Centric Design",
     description:
       "Focus on delivering seamless user experiences through research-driven and intuitive design frameworks.",
-    image: "/api/placeholder/128/128",
+    image: "https://placehold.co/250",
   },
 ]
 
@@ -57,11 +58,11 @@ const Features: React.FC = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="relative text-center bg-primary rounded-md p-6"
             >
-              <div className="mb-6 flex justify-center">
+              <div className="mt-3 mb-6 flex justify-center">
                 <motion.img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-32 h-32 object-cover text-card"
+                  className="text-card"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.2 }}
                 />
@@ -70,10 +71,11 @@ const Features: React.FC = () => {
               <p className="text-card mb-4">{feature.description}</p>
               <Button
                 variant="link"
-                className="text-background font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
               >
-                Learn More
-                <ArrowRight className="h-4 w-4" />
+                <Link to="/" className="text-background font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                  Learn More
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
               </Button>
             </motion.div>
           ))}
