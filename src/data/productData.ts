@@ -31,6 +31,7 @@ const products: ProductInterface[] = [
     link: "https://legaldocs-tau.vercel.app/",
     productType: "saas",
     productStatus: "Live",
+    imageSrc: "/src/assets/images/LegalDocs.png"
   },
   {
     id: "product1",
@@ -60,6 +61,7 @@ const products: ProductInterface[] = [
     link: "https://gozeon.com/",
     productType: "saas",
     productStatus: "Live",
+    imageSrc: "/src/assets/images/Zeon.png"
   },
   {
     id: "product2",
@@ -89,6 +91,7 @@ const products: ProductInterface[] = [
     link: "https://resume-site-c4e.vercel.app/",
     productType: "saas",
     productStatus: "Live",
+    imageSrc: "/src/assets/images/ResumeAIPro.png"
   },
   {
     id: "product3",
@@ -118,6 +121,7 @@ const products: ProductInterface[] = [
     link: "https://zeon-8qz.pages.dev/",
     productType: "saas",
     productStatus: "Live",
+    imageSrc: "/src/assets/images/Curattor4.jpg"
   },
   {
     id: "product4",
@@ -147,6 +151,7 @@ const products: ProductInterface[] = [
     link: "https://analyse-csv-data.vercel.app/",
     productType: "saas",
     productStatus: "Live",
+    imageSrc: "/src/assets/images/CSV_CSV2_CSV3.jpeg"
   },
   {
     id: "product5",
@@ -176,6 +181,7 @@ const products: ProductInterface[] = [
     link: "https://chromewebstore.google.com/detail/finfriend/ialnbadijnahcjeflecdnkficehiohce",
     productType: "other",
     productStatus: "Live",
+    imageSrc: "/src/assets/images/FinFriend.png"
   },
   {
     id: "product6",
@@ -204,38 +210,10 @@ const products: ProductInterface[] = [
     ],
     productType: "other",
     productStatus: "Upcoming",
+    imageSrc: "/src/assets/images/WhatsappReminder1.png"
   },
   {
     id: "product7",
-    name: "OkLink",
-    icon: React.createElement(Link, { className: "h-6 w-6 text-indigo-500" }),
-    description:
-      "A Linktree alternative to manage and share multiple links in one place.",
-    themeColor: "bg-indigo-500",
-    features: [
-      {
-        title: "Key Features",
-        items: [
-          "Link management",
-          "Customizable link pages",
-          "Easy sharing",
-        ],
-      },
-      {
-        title: "Capabilities",
-        items: [
-          "User-friendly interface",
-          "Custom branding options",
-          "Quick link updates",
-        ],
-      },
-    ],
-    link: "https://oklink.vercel.app/",
-    productType: "saas",
-    productStatus: "Live",
-  },
-  {
-    id: "product8",
     name: "ChatMe - WhatsApp Chat Button",
     icon: React.createElement(MessageCircle, { className: "h-6 w-6 text-yellow-500" }),
     description:
@@ -262,9 +240,10 @@ const products: ProductInterface[] = [
     link: "https://apps.shopify.com/whatsapp-chat-button-4",
     productType: "shopify plugin",
     productStatus: "Live",
+    imageSrc: "/src/assets/images/ChatMe.jpeg"
   },
   {
-    id: "product9",
+    id: "product8",
     name: "Snapcraft",
     icon: React.createElement(Image, { className: "h-6 w-6 text-red-500" }),
     description:
@@ -288,12 +267,13 @@ const products: ProductInterface[] = [
         ],
       },
     ],
-    link: "https://snapcraft.in/",
+    link: "https://snapcraft.shipmyapp.in/",
     productType: "saas",
     productStatus: "Live",
+    imageSrc: "/src/assets/images/SnapCraft.png"
   },
   {
-    id: "product10",
+    id: "product9",
     name: "TezPDF: Product Catalogues",
     icon: React.createElement(BookOpen, { className: "h-6 w-6 text-cyan-500" }),
     description:
@@ -320,38 +300,11 @@ const products: ProductInterface[] = [
     link: "https://apps.shopify.com/pdf-catalog",
     productType: "shopify plugin",
     productStatus: "Live",
+    imageSrc: "/src/assets/images/Tezi.jpeg"
   },
+
   {
-    id: "product11",
-    name: "SmartBrand",
-    icon: React.createElement(BriefcaseBusiness, { className: "h-6 w-6 text-lime-500" }),
-    description:
-      "A one-stop ERP solution for brands, covering everything from order management to commission tracking.",
-    themeColor: "bg-lime-500",
-    features: [
-      {
-        title: "Key Features",
-        items: [
-          "Invoice and order management",
-          "Commission tracking",
-          "Centralized brand operations",
-        ],
-      },
-      {
-        title: "Capabilities",
-        items: [
-          "Streamlined workflows",
-          "Customizable forms",
-          "End-to-end brand management",
-        ],
-      },
-    ],
-    link: "https://online.smartbrand.one/",
-    productType: "saas",
-    productStatus: "Archived",
-  },
-  {
-    id: "product12",
+    id: "product10",
     name: "Tezi-B2B",
     icon: React.createElement(Users, { className: "h-6 w-6 text-violet-500" }),
     description:
@@ -378,6 +331,7 @@ const products: ProductInterface[] = [
     link: "https://apps.shopify.com/tezi-b2b",
     productType: "shopify plugin",
     productStatus: "Live",
+    imageSrc: "/src/assets/images/TeziB2B.jpeg"
   },
 ];
 
