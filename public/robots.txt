@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://c4e-labs.netlify.in/sitemap.xml
