@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import { ProductInterface } from "@/types/product";
+import { ProductInterface } from "@/types/productTypes";
 import { FileSpreadsheet, Users, Rocket, Pencil, MessageCircle, Link, BookOpen, Clipboard, Bell, Mic, Image, FileText, Scale, File, BriefcaseBusiness } from "lucide-react";
 
 const products: ProductInterface[] = [

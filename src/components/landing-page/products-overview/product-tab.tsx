@@ -1,5 +1,5 @@
 ﻿import { Tabs, TabsContent } from "@/components/ui/tabs";
-import { ProductInterface } from "@/types/product";
+import { ProductInterface } from "@/types/productTypes";
 import FeatureCard from "@/components/landing-page/products-overview/feature-card";
 import { Button } from "@/components/ui/button";
 

@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 import { ChevronDown, MapPlus } from "lucide-react"
 import { MobileSectionItem } from "@/components/navbar/mobile-menu/SectionItem"
-import { ProductInterface } from "@/types/product"
+import { ProductInterface } from "@/types/productTypes"
 
 export const MobileSection = ( props : { title : string, items : ProductInterface[]} ) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)

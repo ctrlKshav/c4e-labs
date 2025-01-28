@@ -1,6 +1,6 @@
 ﻿import React, { useState } from "react"
 import { MenuSectionItem } from "@/components/navbar/MenuSectionItem"
-import { ProductInterface } from "@/types/product"
+import { ProductInterface } from "@/types/productTypes"
 import { NavigationMenuLink } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import { MapPlus } from "lucide-react"

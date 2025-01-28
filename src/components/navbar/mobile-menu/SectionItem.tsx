@@ -1,6 +1,6 @@
 ﻿// components/navbar/MobileLinkItem.tsx
 import React from "react"
-import { MenuSectionItemProps } from "@/types/navbar"
+import { MenuSectionItemProps } from "@/types/navbarTypes"
 
 export const MobileSectionItem: React.FC<MenuSectionItemProps> = (
   ({ title, href, icon, children, ...props }) => {

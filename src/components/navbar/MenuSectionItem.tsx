@@ -1,7 +1,7 @@
 ﻿import React from "react"
 import { NavigationMenuLink } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
-import { MenuSectionItemProps } from "@/types/navbar"
+import { MenuSectionItemProps } from "@/types/navbarTypes"
 
 
 export const MenuSectionItem : React.FC<MenuSectionItemProps> = (

@@ -13,7 +13,7 @@ import {
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 
-import products from "@/data/products"
+import products from "@/data/productData"
 
 import { MobileItem } from "@/components/navbar/mobile-menu/Item"
 import { MobileSection } from "@/components/navbar/mobile-menu/Section"

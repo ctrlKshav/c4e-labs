@@ -1,6 +1,6 @@
 ﻿import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ProductFeatures, ProductInterface } from "@/types/product";
+import { ProductFeatures, ProductInterface } from "@/types/productTypes";
 
 export default function ProductBlock({ product, index }: { product: ProductInterface, index: number }) {
   return (

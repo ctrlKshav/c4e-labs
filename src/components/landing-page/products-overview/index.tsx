@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import ProductTab from "@/components/landing-page/products-overview/product-tab"
 import TopBar from "@/components/landing-page/products-overview/topbar"
-import products from "@/data/products"
+import products from "@/data/productData"
 
 // Hero Section Component
 const HeroSection = () => (

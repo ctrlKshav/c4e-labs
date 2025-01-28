@@ -1,5 +1,5 @@
 ﻿import ProductBlock from '@/components/product-block'
-import products from '@/data/products'
+import products from '@/data/productData'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/products/saas')({

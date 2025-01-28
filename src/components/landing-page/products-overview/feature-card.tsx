@@ -1,4 +1,4 @@
-﻿import type { ProductFeatures } from "@/types/product"
+﻿import type { ProductFeatures } from "@/types/productTypes"
 import { Card } from "@/components/ui/card"
 
 // Feature Card Component
