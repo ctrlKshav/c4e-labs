@@ -335,4 +335,13 @@ const products: ProductInterface[] = [
   },
 ];
 
+let activeProjects = 0;
+
+products.forEach((product, index) => {
+  if(product.productStatus === "Live")
+    activeProjects += 1;
+})
+
+export { activeProjects };
+
 export default products;

@@ -41,7 +41,7 @@ const ProductShowcase = () => (
       <Tabs defaultValue="product0" className="w-full">
         <TabsList className="grid w-full grid-cols-3">
           {products.slice(0, 3).map((product) => (
-            <TabsTrigger key={product.id} value={product.id} className="text-sm sm:text-base px-2 sm:px-4">
+            <TabsTrigger key={product.id} value={product.id} className="">
               {product.name}
             </TabsTrigger>
           ))}

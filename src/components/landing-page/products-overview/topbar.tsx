@@ -3,8 +3,8 @@ import { Rocket, Search, Filter } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-
-
+import products from '@/data/productData';
+import { activeProjects } from '@/data/productData';
 // TopBar Component
 const TopBar = () => (
   <div className="border-b border-gray-200 bg-white ">
@@ -14,9 +14,8 @@ const TopBar = () => (
         <div className="flex items-center gap-2">
           <Rocket className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
           <span className="text-base sm:text-lg font-semibold">C4E Labs Projects</span>
-          <Badge variant="secondary" className="hidden sm:inline-flex">12 Active</Badge>
+          <Badge variant="secondary" className="sm:inline-flex">{activeProjects} Active</Badge>
         </div>
-        <Badge variant="secondary" className="sm:hidden self-start">12 Active</Badge>
       </div>
       
       
