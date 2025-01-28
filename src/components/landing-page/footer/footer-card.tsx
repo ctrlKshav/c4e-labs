@@ -1,7 +1,7 @@
 ﻿import {Card, CardHeader, CardTitle, CardContent} from "@/components/ui/card";
 
 const FooterCard = ({ title, children }: { title: string; children: React.ReactNode }) => (
-    <Card className="bg-background shadow-md">
+    <Card className="bg-slate-50 shadow-md">
       <CardHeader>
         <CardTitle className="text-primary text-lg">{title}</CardTitle>
       </CardHeader>
