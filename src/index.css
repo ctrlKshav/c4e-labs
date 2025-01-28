@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 255 255% 255%;
+    --background: 0 0% 100%;
     --foreground: 175.3 5% 0%;
     --card: 175.3 50% 90%;
     --card-foreground: 175.3 5% 10%;
@@ -25,10 +25,10 @@
     --ring: 175.3 77.4% 26.1%;
     --radius: 0.5rem;
      /* RGB values for gradients */
-     --background-rgb: 12 22 41;
-     --primary-rgb: 99 154 255;
-     --secondary-rgb: 175.3 50 90%;
-     --accent-rgb: 45 55 72;
+     --background-rgb: 12 22% 41%;
+     --primary-rgb: 99 154% 255%;
+     --secondary-rgb: 175.3 50% 90%;
+     --accent-rgb: 45 55% 72%;
   }
 
   .dark {
@@ -54,10 +54,10 @@
     --radius: 0.5rem;
 
      /* RGB values for gradients */
-     --background-rgb: 12 22 41;
-     --primary-rgb: 99 154 255;
-     --secondary-rgb: 45 55 72;
-     --accent-rgb: 45 55 72;
+     --background-rgb: 12 22% 41%;
+     --primary-rgb: 99 154% 255%;
+     --secondary-rgb: 45 55% 72%;
+     --accent-rgb: 45 55% 72%;
   }
 }
 

@@ -100,15 +100,7 @@ const Features: React.FC = () => {
                 <p className="text-card mb-4 line-clamp-3">
                   {feature.description}
                 </p>
-                <Button variant="link">
-                  <Link
-                    to="/"
-                    className="text-background font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all"
-                  >
-                    Learn More
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
-                </Button>
+                
               </div>
             </motion.div>
           ))}

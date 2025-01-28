@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import ProductTab from "@/components/landing-page/products-overview/product-tab"
 import TopBar from "@/components/landing-page/products-overview/topbar"
 import products from "@/data/productData"
+import { Link } from "@tanstack/react-router"
 
 // Hero Section Component
 const HeroSection = () => (
@@ -24,10 +25,14 @@ const HeroSection = () => (
     </div>
     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
       <Button size="lg" variant="secondary" className="w-full sm:w-auto">
-        Explore Our Products
+          <Link to="/products">
+            Explore Our Products
+          </Link>
       </Button>
       <Button size="lg" variant="outline" className="w-full sm:w-auto">
-        Get in Touch
+        <Link to="/contact">
+          Get in Touch
+        </Link>
       </Button>
     </div>
   </div>

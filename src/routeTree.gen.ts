@@ -11,6 +11,7 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as ContactImport } from './routes/contact'
 import { Route as IndexImport } from './routes/index'
 import { Route as ProductsIndexImport } from './routes/products/index'
 import { Route as ProductsShopifyPluginsImport } from './routes/products/shopify-plugins'
@@ -18,6 +19,12 @@ import { Route as ProductsSaasImport } from './routes/products/saas'
 import { Route as ProductsOthersImport } from './routes/products/others'
 
 // Create/Update Routes
+
+const ContactRoute = ContactImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const IndexRoute = IndexImport.update({
   id: '/',
@@ -60,6 +67,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactImport
+      parentRoute: typeof rootRoute
+    }
     '/products/others': {
       id: '/products/others'
       path: '/products/others'
@@ -95,6 +109,7 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
   '/products/others': typeof ProductsOthersRoute
   '/products/saas': typeof ProductsSaasRoute
   '/products/shopify-plugins': typeof ProductsShopifyPluginsRoute
@@ -103,6 +118,7 @@ export interface FileRoutesByFullPath {
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
   '/products/others': typeof ProductsOthersRoute
   '/products/saas': typeof ProductsSaasRoute
   '/products/shopify-plugins': typeof ProductsShopifyPluginsRoute
@@ -112,6 +128,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
   '/products/others': typeof ProductsOthersRoute
   '/products/saas': typeof ProductsSaasRoute
   '/products/shopify-plugins': typeof ProductsShopifyPluginsRoute
@@ -122,6 +139,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/contact'
     | '/products/others'
     | '/products/saas'
     | '/products/shopify-plugins'
@@ -129,6 +147,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/contact'
     | '/products/others'
     | '/products/saas'
     | '/products/shopify-plugins'
@@ -136,6 +155,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/contact'
     | '/products/others'
     | '/products/saas'
     | '/products/shopify-plugins'
@@ -145,6 +165,7 @@ export interface FileRouteTypes {
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactRoute: typeof ContactRoute
   ProductsOthersRoute: typeof ProductsOthersRoute
   ProductsSaasRoute: typeof ProductsSaasRoute
   ProductsShopifyPluginsRoute: typeof ProductsShopifyPluginsRoute
@@ -153,6 +174,7 @@ export interface RootRouteChildren {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactRoute: ContactRoute,
   ProductsOthersRoute: ProductsOthersRoute,
   ProductsSaasRoute: ProductsSaasRoute,
   ProductsShopifyPluginsRoute: ProductsShopifyPluginsRoute,
@@ -170,6 +192,7 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
+        "/contact",
         "/products/others",
         "/products/saas",
         "/products/shopify-plugins",
@@ -178,6 +201,9 @@ export const routeTree = rootRoute
     },
     "/": {
       "filePath": "index.tsx"
+    },
+    "/contact": {
+      "filePath": "contact.tsx"
     },
     "/products/others": {
       "filePath": "products/others.tsx"
