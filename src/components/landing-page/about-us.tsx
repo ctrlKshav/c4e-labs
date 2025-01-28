@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { Link } from "@tanstack/react-router"
 
 const AboutUs: React.FC = () => {
   return (
@@ -72,7 +73,9 @@ const AboutUs: React.FC = () => {
                   variant="secondary"
                   className="shadow-md w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                 >
-                  Learn More About Us
+                  <Link to="/">
+                    Learn More About Us
+                  </Link>
                 </Button>
               </CardContent>
             </Card>

@@ -3,6 +3,7 @@ import React from "react"
 
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
+import { Link } from '@tanstack/react-router'
 
 const Hero = () => {
   return (
@@ -29,7 +30,7 @@ const Hero = () => {
               size="lg"
               className="mt-8 sm:mt-16"
             >
-              Explore Our Solutions
+              <Link to='/products'>Explore Our Solutions</Link>
             </Button>
           </div>
         </div>

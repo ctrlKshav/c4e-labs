@@ -19,6 +19,7 @@ import { MobileItem } from "@/components/navbar/mobile-menu/Item"
 import { MobileSection } from "@/components/navbar/mobile-menu/Section"
 
 import { MenuSection } from "@/components/navbar/MenuSection"
+import { Link } from "@tanstack/react-router"
 
 const Navbar: React.FC = () => {
   const [isSheetOpen, setIsSheetOpen] = useState<boolean>(false)
@@ -56,10 +57,10 @@ const Navbar: React.FC = () => {
       <div className="flex h-16 items-center px-4 max-w-7xl mx-auto relative">
         <div className="flex items-center justify-between space-x-4 lg:space-x-12 w-full">
           {/* Logo */}
-          <a href="/#" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2"> 
             <FlaskConical className="h-6 w-6" color="#008080" />
             <span className="text-2xl font-semibold">C4E LABS</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
@@ -68,9 +69,9 @@ const Navbar: React.FC = () => {
                 {/* Products Menu */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="h-auto p-2">
-                    <NavigationMenuLink className="flex items-center text-base" href="/products">
+                    <Link to="/products">
                       <span className="flex items-center text-base">Products</span>
-                    </NavigationMenuLink>
+                    </Link>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="bg-background">
 

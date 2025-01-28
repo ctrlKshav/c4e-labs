@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 export default function CTASection() {
   return (
@@ -26,7 +27,11 @@ export default function CTASection() {
               className="bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2"
               size="lg"
             >
-              Get Started
+
+              <Link to="/products">
+                Get Started
+              </Link>
+              
               <ArrowRight className="h-4 w-4" />
             </Button>
           </motion.div>
