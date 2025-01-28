@@ -5,7 +5,7 @@ import { ProductFeatures, ProductInterface } from "@/types/product";
 
 export default function Product({ product, index }: { product: ProductInterface, index: number }) {
   return (
-    <div className={`relative overflow-hidden ${index % 2 === 0 ?  "bg-gradient-radial-stripe"  : "bg-gradient-radial-quad" }`}>
+    <div className={`relative overflow-hidden text-background min-[512px]:text-foreground ${index % 2 === 0 ?  "bg-gradient-radial-stripe"  : "bg-gradient-radial-quad" }`}>
       {/* Background circle */}
       {product.themeColor && (
         <div
@@ -33,15 +33,15 @@ export default function Product({ product, index }: { product: ProductInterface,
               </h2>
 
               {/* Description */}
-              <p className="text-xl text-gray-600">{product.description}</p>
+              <p className="text-xl text-gray-100/80 min-[544px]:text-gray-700/80">{product.description}</p>
             </div>
 
             {/* Features */}
-            <div className="space-y-4">
+            <div className="space-y-4 ">
               {product.features.map((feature: ProductFeatures, index: number) => (
                 <div key={index}>
                   <h3 className="text-lg font-semibold">{feature.title}</h3>
-                  <ul className="list-disc pl-6 text-gray-600">
+                  <ul className="list-disc pl-6 text-gray-100/80 blob1:text-gray-700/80">
                     {feature.items.map((item: string, index: number) => (
                       <li key={index}>{item}</li>
                     ))}
