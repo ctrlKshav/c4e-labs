@@ -40,7 +40,7 @@ export default function SelectProductType() {
   return (
     <div className="min-h-screen bg-gradient-radial-stripe animate-gradient-slow p-8">
       <div className=" mx-auto">
-        <h1 className="text-5xl font-bold text-center mb-10 text-primary drop-shadow-glow-primary mt-28">
+        <h1 className="text-5xl font-bold text-center mb-10 text-foreground drop-shadow-glow-primary mt-28">
           Select Product Type
         </h1>
         <p className="text-center text-xl mb-16 text-foreground max-w-2xl mx-auto">

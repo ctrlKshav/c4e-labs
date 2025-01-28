@@ -58,12 +58,12 @@ export default function Product({ product, index }: { product: ProductInterface,
                 rel="noopener noreferrer"
                 className="inline-block"
               >
-                <Button variant="outline" className="w-full sm:w-auto">
+                <Button variant="default" className="w-1/2">
                   Visit Website
                 </Button>
               </a>)
             : (
-              <Button variant="outline" className="w-full sm:w-1/2">
+              <Button variant="secondary" className="w-1/2">
                 Coming Soon ...
               </Button>
             )}

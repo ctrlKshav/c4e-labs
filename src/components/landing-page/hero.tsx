@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 const Hero = () => {
   return (
-    <section className="relative md:min-h-screen overflow-hidden bg-background">
+    <section className="relative min-h-screen overflow-hidden bg-background">
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-radial-stripe animate-gradient-slow">
         <div className="absolute inset-0 bg-background/50" />
