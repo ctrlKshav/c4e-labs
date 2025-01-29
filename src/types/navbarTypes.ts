@@ -7,9 +7,18 @@ export interface MenuSectionItemProps{
     children?: ReactNode
   };
 
+
+export interface MobileSectionProps {
+  title: string
+  isSheetOpen?: boolean
+  setIsSheetOpen: (isSheetOpen: boolean) => void
+}  
+
 export interface MobileMenuItemProps {
   href: string
   className?: string
   children: ReactNode
-  onClick?: () => void
+  isSheetOpen: boolean
+  setIsSheetOpen: (isSheetOpen: boolean) => void
 }
+

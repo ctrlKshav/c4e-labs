@@ -15,8 +15,8 @@ import { cn } from "@/lib/utils"
 
 import products from "@/data/productData"
 
-import { MobileItem } from "@/components/navbar/mobile-menu/Item"
-import { MobileSection } from "@/components/navbar/mobile-menu/Section"
+import { MobileMenuItem } from "@/components/navbar/mobile-menu/MobileMenuItem"
+import { MobileSection } from "@/components/navbar/mobile-menu/MobileMenuSection"
 
 import { MenuSection } from "@/components/navbar/MenuSection"
 import { Link } from "@tanstack/react-router"
@@ -139,16 +139,16 @@ const Navbar: React.FC = () => {
                 {/* Scrollable Menu Content */}
                 <div className="flex-grow overflow-y-auto">
                   <div className="space-y-2 pb-20">
-                    <MobileSection title="Products" items={products} />
+                    <MobileSection title="Products" setIsSheetOpen={setIsSheetOpen} />
 
                     {/* Direct Links */}
                     <div className="border-b">
-                      <MobileItem href="/" onClick={() => setIsSheetOpen(false)}>
+                      <MobileMenuItem href="/" isSheetOpen={isSheetOpen} setIsSheetOpen={setIsSheetOpen}>
                         Blog
-                      </MobileItem>
-                      <MobileItem href="/" onClick={() => setIsSheetOpen(false)}>
+                      </MobileMenuItem>
+                      <MobileMenuItem href="/" isSheetOpen={isSheetOpen} setIsSheetOpen={setIsSheetOpen}>
                         Community
-                      </MobileItem>
+                      </MobileMenuItem>
                     </div>
                   </div>
                 </div>
