@@ -74,6 +74,7 @@ module.exports = {
 				'accordion-up': 'accordion-up 0.2s ease-out'
 			},
 			screens: {
+			'mobile' : '420px',
 			'blob1': '484px',
 			'blob2': '512px',
 			'blob3': '544px',

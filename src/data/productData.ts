@@ -65,7 +65,7 @@ const products: ProductInterface[] = [
   },
   {
     id: "product2",
-    name: "Resume AI PRO",
+    name: "ResumeAI",
     icon: React.createElement(File, { className: "h-6 w-6 text-violet-500" }),
     description:
       "Optimize your resume with AI-driven ATS scoring, improvement suggestions, and expert resume reviews.",
