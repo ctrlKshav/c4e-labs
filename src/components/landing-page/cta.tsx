@@ -50,6 +50,7 @@ export default function CTASection() {
                 className="w-full h-full object-cover rounded-2xl"
                 width={600}
                 height={600}
+                loading="lazy"
               />
               {/* Gradient overlay */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/10 via-transparent to-transparent" />

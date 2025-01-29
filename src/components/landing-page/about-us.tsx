@@ -93,6 +93,7 @@ const AboutUs: React.FC = () => {
               className="rounded-lg shadow-xl w-full h-auto"
               width={600}
               height={400}
+              loading="lazy"
             />
             <motion.div
               className="absolute -bottom-4 -right-4 bg-card p-4 rounded-lg shadow-lg"
