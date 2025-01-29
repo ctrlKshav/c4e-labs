@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from "react"
+﻿import React, { useState, useEffect, useRef } from "react"
 import { FlaskConical, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { 
@@ -13,8 +13,6 @@ import {
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 
-import products from "@/data/productData"
-
 import { MobileMenuItem } from "@/components/navbar/mobile-menu/MobileMenuItem"
 import { MobileSection } from "@/components/navbar/mobile-menu/MobileMenuSection"
 
@@ -23,28 +21,29 @@ import { Link } from "@tanstack/react-router"
 
 const Navbar: React.FC = () => {
   const [isSheetOpen, setIsSheetOpen] = useState<boolean>(false)
+  
   const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>(null)
-  const [prevScrollY, setPrevScrollY] = useState(0)
   const [isAtTop, setIsAtTop] = useState(true)
-
+  const prevScrollY = useRef(0)
+  
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
       setIsAtTop(currentScrollY === 0)
-
-      if (currentScrollY > prevScrollY) {
+  
+      if (currentScrollY > prevScrollY.current) {
         setScrollDirection("down")
-      } else if (currentScrollY < prevScrollY) {
+      } else if (currentScrollY < prevScrollY.current) {
         setScrollDirection("up")
       }
-
-      setPrevScrollY(currentScrollY)
+  
+      prevScrollY.current = currentScrollY
     }
-
+  
     window.addEventListener("scroll", handleScroll, { passive: true })
-
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [prevScrollY])
+  }, [])
+  
 
   const navbarClasses = cn("fixed top-0 left-0 right-0 w-full transition-all duration-300 z-50", {
     "bg-white/0 backdrop-blur-none": isAtTop,

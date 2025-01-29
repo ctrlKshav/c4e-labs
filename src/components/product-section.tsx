@@ -2,25 +2,11 @@
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import type { ProductFeatures, ProductInterface } from "@/types/productTypes"
-import { useRef, useEffect, useState } from "react"
+import type {ProductInterface } from "@/types/productTypes"
+import { useRef } from "react"
 
 export default function ProductSection({ product, index }: { product: ProductInterface; index: number }) {
-  const [isScrollable, setIsScrollable] = useState(false)
-  const imageRef = useRef<HTMLImageElement>(null)
-
-  useEffect(() => {
-    const checkScrollable = () => {
-      if (imageRef.current) {
-        setIsScrollable(imageRef.current.scrollHeight > imageRef.current.clientHeight)
-      }
-    }
-
-    checkScrollable()
-    window.addEventListener("resize", checkScrollable)
-
-    return () => window.removeEventListener("resize", checkScrollable)
-  }, [])
+  const imageRef = useRef<HTMLImageElement>(null) 
 
   return (
     <div
@@ -86,9 +72,7 @@ export default function ProductSection({ product, index }: { product: ProductInt
                 className="object-contain w-full"
               />
             </div>
-            {isScrollable && (
-              <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-background to-transparent pointer-events-none" />
-            )}
+            <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-background to-transparent pointer-events-none" />
           </div>
         </div>
       </div>
