@@ -1,15 +1,15 @@
 ﻿"use client"
 import React from "react"
 import FooterCard from "@/components/landing-page/footer/footer-card"
-import { socialMedia } from "@/data/footer"
-import { productLinks, companyLinks } from "@/data/footer"
+import { socialLinks } from "@/data/footerData"
+import { productLinks, companyLinks } from "@/data/footerData"
 
 const SocialLinks = () => {
   return (
     <FooterCard title="C4E Labs">
       <p className="text-foreground mb-4">Innovating the future of SaaS.</p>
       <div className="flex space-x-6">
-        {socialMedia.map((social, index) => (
+        {socialLinks.map((social, index) => (
           <a
             key={index}
             href={social.link}

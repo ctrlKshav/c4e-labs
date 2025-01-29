@@ -1,6 +1,6 @@
 ﻿import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
-export const socialMedia = [
+export const socialLinks = [
   { icon: Facebook, label: "Facebook", link: "/" },
   { icon: Twitter, label: "Twitter", link: "/" },
   { icon: Linkedin, label: "LinkedIn", link: "/" },

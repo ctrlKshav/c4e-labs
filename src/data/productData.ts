@@ -335,6 +335,10 @@ const products: ProductInterface[] = [
   },
 ];
 
+const mvps: ProductInterface[] = [
+  ...products.slice(0,3)
+];
+
 let activeProjects = 0;
 
 products.forEach((product, index) => {
@@ -342,6 +346,6 @@ products.forEach((product, index) => {
     activeProjects += 1;
 })
 
-export { activeProjects };
+export { activeProjects, mvps };
 
 export default products;

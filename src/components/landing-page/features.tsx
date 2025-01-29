@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Link } from "@tanstack/react-router"
 
-import { features } from "@/data/featuresData"
+import { features } from "@/data/c4eFeaturesData"
 
 const Features: React.FC = () => {
   return (
