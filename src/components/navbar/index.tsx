@@ -10,7 +10,9 @@ import {
   NavigationMenuTrigger, 
   NavigationMenuViewport 
 } from "@/components/ui/navigation-menu"
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription,  SheetTrigger } from "@/components/ui/sheet"
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden"
+
 import { cn } from "@/lib/utils"
 
 import { MobileMenuItem } from "@/components/navbar/mobile-menu/MobileMenuItem"
@@ -133,6 +135,12 @@ const Navbar: React.FC = () => {
                     <FlaskConical className="h-6 w-6" color="#008080" />
                     <span>C4E LABS</span>
                   </SheetTitle>
+                  
+                  <VisuallyHidden>
+                  <SheetDescription>
+                    Explore innovative micro SaaS projects and transform your ideas into reality
+                  </SheetDescription>
+                  </VisuallyHidden>
                 </SheetHeader>
 
                 {/* Scrollable Menu Content */}
