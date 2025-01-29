@@ -1,13 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider, createRouter } from '@tanstack/react-router'
+import { RouterProvider, createRouter, lazyRouteComponent } from '@tanstack/react-router'
 import { routeTree } from './routeTree.gen'
 import "./index.css"
+import ErrorComponent from '@/components/error-component'
 
 // Set up a Router instance
 const router = createRouter({
   routeTree,
   defaultPreload: 'viewport',
+  defaultNotFoundComponent: lazyRouteComponent(() => import('@/components/not-found-component')),
+  defaultErrorComponent: ({error}) => <ErrorComponent error={error} />,
 })
 
 // Register things for typesafety
