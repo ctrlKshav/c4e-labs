@@ -41,6 +41,6 @@ export const companyLinks = [
   },
   {
     name: "Contact",
-    href: "#",
+    href: "/contact",
   },
 ] as const;
