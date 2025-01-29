@@ -10,7 +10,7 @@ const products: ProductInterface[] = [
     description:
       "Manage, track, and collaborate on legal documents with your team. LegalDocs brings every piece of your legal workflow together.",
     themeColor: "bg-blue-500",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -19,15 +19,6 @@ const products: ProductInterface[] = [
           "Legal workflow management",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "85% reduction in document processing time",
-          "Streamlined contract review",
-          "Team collaboration tools",
-        ],
-      },
-    ],
     link: "https://legaldocs-tau.vercel.app/",
     productType: "saas",
     productStatus: "Live",
@@ -40,7 +31,7 @@ const products: ProductInterface[] = [
     description:
       "Your personal branding copilot. Zeon helps you write and generate posts, automate content, and analyze performance on LinkedIn.",
     themeColor: "bg-purple-700",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -49,15 +40,6 @@ const products: ProductInterface[] = [
           "Actionable analytics",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "Cross-platform posting (LinkedIn first)",
-          "Goal-based social media strategies",
-          "Network exploration tools",
-        ],
-      },
-    ],
     link: "https://gozeon.com/",
     productType: "saas",
     productStatus: "Live",
@@ -70,7 +52,7 @@ const products: ProductInterface[] = [
     description:
       "Optimize your resume with AI-driven ATS scoring, improvement suggestions, and expert resume reviews.",
     themeColor: "bg-violet-500",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -79,15 +61,6 @@ const products: ProductInterface[] = [
           "Expert review booking",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "Resume roasting (AI-driven)",
-          "Increased resume visibility",
-          "Tailored suggestions for improvement",
-        ],
-      },
-    ],
     link: "https://resume-site-c4e.vercel.app/",
     productType: "saas",
     productStatus: "Live",
@@ -100,7 +73,7 @@ const products: ProductInterface[] = [
     description:
       "A curation-as-a-service tool for content curators. Automate workflows, generate newsletters, and manage curated content effortlessly.",
     themeColor: "bg-blue-500",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -109,15 +82,6 @@ const products: ProductInterface[] = [
           "Newsletter generation",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "WhatsApp message automation",
-          "Custom workflows",
-          "Integration with multiple platforms",
-        ],
-      },
-    ],
     link: "https://zeon-8qz.pages.dev/",
     productType: "saas",
     productStatus: "Live",
@@ -130,7 +94,7 @@ const products: ProductInterface[] = [
     description:
       "Visualize and analyze CSV data efficiently without needing advanced Excel skills.",
     themeColor: "bg-orange-500",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -139,15 +103,6 @@ const products: ProductInterface[] = [
           "Column visibility management",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "Data visualization tools",
-          "Multi-level grouping and searching",
-          "User-friendly interface",
-        ],
-      },
-    ],
     link: "https://analyse-csv-data.vercel.app/",
     productType: "saas",
     productStatus: "Live",
@@ -160,7 +115,7 @@ const products: ProductInterface[] = [
     description:
       "A Chrome extension to store frequently used text like PDF passwords and other snippets for quick access.",
     themeColor: "bg-pink-500",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -169,15 +124,6 @@ const products: ProductInterface[] = [
           "Chrome extension integration",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "Secure text storage",
-          "Easy-to-use interface",
-          "Frequently used text management",
-        ],
-      },
-    ],
     link: "https://chromewebstore.google.com/detail/finfriend/ialnbadijnahcjeflecdnkficehiohce",
     productType: "other",
     productStatus: "Live",
@@ -190,7 +136,7 @@ const products: ProductInterface[] = [
     description:
       "Set reminders via WhatsApp messages, voice notes, emails, or phone calls. Perfect for personal and team use.",
     themeColor: "bg-teal-500",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -199,15 +145,6 @@ const products: ProductInterface[] = [
           "Team access for shared reminders",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "Voice note reminders",
-          "Web portal for team management",
-          "Customizable reminder options",
-        ],
-      },
-    ],
     productType: "other",
     productStatus: "Upcoming",
     imageSrc: "/images/products/WhatsappReminder1.png"
@@ -219,7 +156,7 @@ const products: ProductInterface[] = [
     description:
       "A Shopify to add a WhatsApp chat button to your store, enabling direct customer communication.",
     themeColor: "bg-yellow-500",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -228,15 +165,6 @@ const products: ProductInterface[] = [
           "Direct customer communication",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "500+ store installs",
-          "Easy setup and use",
-          "Enhanced customer engagement",
-        ],
-      },
-    ],
     link: "https://apps.shopify.com/whatsapp-chat-button-4",
     productType: "shopify plugin",
     productStatus: "Live",
@@ -249,7 +177,7 @@ const products: ProductInterface[] = [
     description:
       "Create product photos 10x faster with AI. Works directly from WhatsApp for quick image enhancements.",
     themeColor: "bg-red-500",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -258,15 +186,6 @@ const products: ProductInterface[] = [
           "Quick photo editing",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "5k+ images enhanced",
-          "Featured in international newsletters",
-          "Visitors from 80+ countries",
-        ],
-      },
-    ],
     link: "https://snapcraft.shipmyapp.in/",
     productType: "saas",
     productStatus: "Live",
@@ -279,7 +198,7 @@ const products: ProductInterface[] = [
     description:
       "Create tailor-made product catalogues with customizable layouts and branding options.",
     themeColor: "bg-cyan-500",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -288,15 +207,6 @@ const products: ProductInterface[] = [
           "Shopify integration",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "Time-saving catalogue generation",
-          "Custom branding options",
-          "Enhanced product presentation",
-        ],
-      },
-    ],
     link: "https://apps.shopify.com/pdf-catalog",
     productType: "shopify plugin",
     productStatus: "Live",
@@ -310,7 +220,7 @@ const products: ProductInterface[] = [
     description:
       "Streamline B2B customer onboarding with customizable signup forms and easy customer management.",
     themeColor: "bg-violet-500",
-    features: [
+    features: 
       {
         title: "Key Features",
         items: [
@@ -319,15 +229,6 @@ const products: ProductInterface[] = [
           "Form builder for diverse use cases",
         ],
       },
-      {
-        title: "Capabilities",
-        items: [
-          "Simplified onboarding process",
-          "Fully customizable forms",
-          "Enhanced customer data management",
-        ],
-      },
-    ],
     link: "https://apps.shopify.com/tezi-b2b",
     productType: "shopify plugin",
     productStatus: "Live",

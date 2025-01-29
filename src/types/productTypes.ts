@@ -6,7 +6,7 @@ export interface ProductInterface {
   icon: ReactNode;
   description: string;
   themeColor?: string; 
-  features: ProductFeatures[];
+  features: ProductFeatures;
   link?: string; 
   productType?: string;
   productStatus?: string;

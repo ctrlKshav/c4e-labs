@@ -52,16 +52,14 @@ export default function ProductSection({ product, index }: { product: ProductInt
 
             {/* Features */}
             <div className="space-y-4 ">
-              {product.features.map((feature: ProductFeatures, index: number) => (
-                <div key={index}>
-                  <h3 className="text-lg font-semibold text-foreground">{feature.title}</h3>
+                <div >
+                  <h3 className="text-lg font-semibold text-foreground">{product.features.title}</h3>
                   <ul className="list-disc pl-6  text-gray-700/80">
-                    {feature.items.map((item: string, index: number) => (
+                    {product.features.items.map((item: string, index: number) => (
                       <li key={index}>{item}</li>
                     ))}
                   </ul>
                 </div>
-              ))}
             </div>
 
             {/* Link (if applicable) */}
