@@ -41,6 +41,7 @@ const Features: React.FC = () => {
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.2 }}
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">
