@@ -88,7 +88,7 @@ const AboutUs: React.FC = () => {
             className="relative"
           >
             <img
-              src="/images/AboutUs1.jpg"
+              src="/images/AboutUs1.webp"
               alt="C4E Labs Team"
               className="rounded-lg shadow-xl w-full h-auto"
               width={600}
