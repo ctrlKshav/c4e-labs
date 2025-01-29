@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
 
-                    <MenuSection items={products} />
+                    <MenuSection />
                     
                   </NavigationMenuContent>
                 </NavigationMenuItem>

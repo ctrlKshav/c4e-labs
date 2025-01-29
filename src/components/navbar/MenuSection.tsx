@@ -5,22 +5,22 @@ import { NavigationMenuLink } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import { MapPlus } from "lucide-react"
 import { Link } from "@tanstack/react-router"
+import { mvps } from "@/data/productData"
 
-export const MenuSection = (props : { items : ProductInterface[]}) => {
+export const MenuSection = () => {
 
-  const items = props.items.slice(0,3)
   
   return (  
         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 ">
           
-          {items.map((item) => (
+          {mvps.map((product) => (
             <MenuSectionItem
-              key={item.id}
-              title={item.name}
-              href={item.link ?? "/"}
-              icon={item.icon()}
+              key={product.id}
+              title={product.name}
+              href={product.link ?? "/"}
+              icon={product.icon()}
             >
-              {item.description}
+              {product.description}
             </MenuSectionItem>
           ))}
 
@@ -31,7 +31,6 @@ export const MenuSection = (props : { items : ProductInterface[]}) => {
                 className={cn(
                   "group block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-primary hover:text-background focus:bg-primary focus:text-accent-foreground",
                 )}
-                {...props}
               >
                 <div className="flex items-center gap-2">
                   <MapPlus className="w-5 h-5 " />
