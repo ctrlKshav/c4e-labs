@@ -10,7 +10,7 @@ const ProductTab = ({ product }: { product: ProductInterface }) => (
       <CardContent className="p-4 sm:p-6 bg-background">
         <div className="flex flex-col space-y-6">
           <div className="flex items-center gap-3">
-            <div className="shrink-0 ">{product.icon}</div>
+            <div className="shrink-0 ">{product.icon()}</div>
             <h3 className="text-sm sm:text-2xl font-extrabold text-primary">{product.name}</h3>
           </div>
           <p className="text-xs sm:text-lg text-foreground/80  leading-relaxed">{product.description}</p>

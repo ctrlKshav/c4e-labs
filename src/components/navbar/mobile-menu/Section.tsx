@@ -9,7 +9,7 @@ export const MobileSection = ( props : { title : string, items : ProductInterfac
 
   const products = props.items.slice(0,3)
   const items = [...products, 
-    { id: "explore", name: "Explore More", icon: <MapPlus />, link: "/products" }
+    { id: "explore", name: "Explore More", icon: () => <MapPlus />, link: "/products" }
   ]
   return (
     <div className="border-b">
@@ -29,7 +29,7 @@ export const MobileSection = ( props : { title : string, items : ProductInterfac
               key={item.id} 
               title={item.name} 
               href={item.link ?? "/"} 
-              icon={item.icon}
+              icon={item.icon()}
             />
           ))}
 

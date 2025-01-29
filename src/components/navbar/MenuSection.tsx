@@ -18,7 +18,7 @@ export const MenuSection = (props : { items : ProductInterface[]}) => {
               key={item.id}
               title={item.name}
               href={item.link ?? "/"}
-              icon={item.icon}
+              icon={item.icon()}
             >
               {item.description}
             </MenuSectionItem>

@@ -3,7 +3,7 @@
 export interface ProductInterface {
   id: string;
   name: string;
-  icon: ReactNode;
+  icon: () => ReactNode;
   description: string;
   themeColor?: string; 
   features: ProductFeatures;

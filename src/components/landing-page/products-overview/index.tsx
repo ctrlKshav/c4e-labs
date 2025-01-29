@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import ProductTab from "@/components/landing-page/products-overview/product-tab"
 import TopBar from "@/components/landing-page/products-overview/topbar"
-import products from "@/data/productData"
+import { mvps } from "@/data/productData"
 import { Link } from "@tanstack/react-router"
 
 // Hero Section Component
@@ -41,13 +41,13 @@ const ProductShowcase = () => (
     <div className="">
       <Tabs defaultValue="product0" className="w-full ">
         <TabsList className="grid grid-cols-3 bg-primary text-background px-4 py-2 rounded-none h-fit">
-          {products.slice(0, 3).map((product) => (
+          {mvps.map((product) => (
             <TabsTrigger key={product.id} value={product.id} className="text-xs sm:text-sm lg:text-base font-extrabold">
               {product.name}
             </TabsTrigger>
           ))}
         </TabsList>
-        {products.map((product) => (
+        {mvps.map((product) => (
           <ProductTab key={product.id} product={product} />
         ))}
       </Tabs>
