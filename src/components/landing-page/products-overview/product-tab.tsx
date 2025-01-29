@@ -16,9 +16,6 @@ const ProductTab = ({ product }: { product: ProductInterface }) => (
           <p className="text-xs sm:text-lg text-foreground/80  leading-relaxed">{product.description}</p>
           <div className="grid grid-cols-1 gap-4 sm:gap-6">
             <FeatureCard {...product.features[0]} />
-            {/* {product.features.map((feature, index) => (
-              <FeatureCard key={index} {...feature} />
-            ))} */}
           </div>
           {product.link && (
             <div className="mt-4 sm:mt-6">

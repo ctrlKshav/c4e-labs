@@ -7,7 +7,7 @@ export default function MVPS() {
     <div>
         {
             products.slice(0,3).map((product, index) => (
-                <ProductSection product={product} index={index}  />
+                <ProductSection key={product.id} product={product} index={index}  />
             ))
         }
     </div>
