@@ -21,7 +21,7 @@ const products: ProductInterface[] = [
     link: "https://legaldocs-tau.vercel.app/",
     productType: "saas",
     productStatus: "Live",
-    imageSrc: "/images/products/LegalDocs.png",
+    imageSrc: "/images/products/LegalDocs.webp",
   },
   {
     id: "product1",
@@ -41,7 +41,7 @@ const products: ProductInterface[] = [
     link: "https://gozeon.com/",
     productType: "saas",
     productStatus: "Live",
-    imageSrc: "/images/products/Zeon.png",
+    imageSrc: "/images/products/Zeon.webp",
   },
   {
     id: "product2",
@@ -61,7 +61,7 @@ const products: ProductInterface[] = [
     link: "https://resume-site-c4e.vercel.app/",
     productType: "saas",
     productStatus: "Live",
-    imageSrc: "/images/products/ResumeAIPro.png",
+    imageSrc: "/images/products/ResumeAIPro.webp",
   },
   {
     id: "product3",
@@ -81,7 +81,7 @@ const products: ProductInterface[] = [
     link: "https://zeon-8qz.pages.dev/",
     productType: "saas",
     productStatus: "Live",
-    imageSrc: "/images/products/Curattor4.jpg",
+    imageSrc: "/images/products/Curattor4.webp",
   },
   {
     id: "product4",
@@ -101,7 +101,7 @@ const products: ProductInterface[] = [
     link: "https://analyse-csv-data.vercel.app/",
     productType: "saas",
     productStatus: "Live",
-    imageSrc: "/images/products/CSV_CSV2_CSV3.jpeg",
+    imageSrc: "/images/products/CSV_CSV2_CSV3.webp",
   },
   {
     id: "product5",
@@ -121,7 +121,7 @@ const products: ProductInterface[] = [
     link: "https://chromewebstore.google.com/detail/finfriend/ialnbadijnahcjeflecdnkficehiohce",
     productType: "other",
     productStatus: "Live",
-    imageSrc: "/images/products/FinFriend.png",
+    imageSrc: "/images/products/FinFriend.webp",
   },
   {
     id: "product6",
@@ -140,7 +140,7 @@ const products: ProductInterface[] = [
     },
     productType: "other",
     productStatus: "Upcoming",
-    imageSrc: "/images/products/WhatsappReminder1.png",
+    imageSrc: "/images/products/WhatsappReminder1.webp",
   },
   {
     id: "product7",
@@ -160,7 +160,7 @@ const products: ProductInterface[] = [
     link: "https://apps.shopify.com/whatsapp-chat-button-4",
     productType: "shopify plugin",
     productStatus: "Live",
-    imageSrc: "/images/products/ChatMe.jpeg",
+    imageSrc: "/images/products/ChatMe.webp",
   },
   {
     id: "product8",
@@ -180,7 +180,7 @@ const products: ProductInterface[] = [
     link: "https://snapcraft.shipmyapp.in/",
     productType: "saas",
     productStatus: "Live",
-    imageSrc: "/images/products/SnapCraft.png",
+    imageSrc: "/images/products/SnapCraft.webp",
   },
   {
     id: "product9",
@@ -200,7 +200,7 @@ const products: ProductInterface[] = [
     link: "https://apps.shopify.com/pdf-catalog",
     productType: "shopify plugin",
     productStatus: "Live",
-    imageSrc: "/images/products/Tezi.jpeg",
+    imageSrc: "/images/products/Tezi.webp",
   },
   {
     id: "product10",
@@ -220,7 +220,7 @@ const products: ProductInterface[] = [
     link: "https://apps.shopify.com/tezi-b2b",
     productType: "shopify plugin",
     productStatus: "Live",
-    imageSrc: "/images/products/TeziB2B.jpeg",
+    imageSrc: "/images/products/TeziB2B.webp",
   },
 ];
 
