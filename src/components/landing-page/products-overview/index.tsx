@@ -16,21 +16,21 @@ const HeroSection = () => (
       <Badge className="mb-3 sm:mb-4 bg-card text-foreground hover:bg-slate-100">
         VENTURE STUDIO
       </Badge>
-      <h1 className="mb-3 sm:mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-card blob1:text-foreground">
+      <h1 className="mb-3 sm:mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-background blob3:text-foreground">
         Innovate, Create, and Scale with C4E Labs
-      </h1>
-      <p className="text-base sm:text-lg md:text-xl text-card blob1:text-foreground/80">
+      </h1> 
+      <p className="text-base sm:text-lg md:text-xl text-card/80 blob3:text-foreground/80">
         We're an umbrella of cutting-edge micro SaaS products, empowering businesses across industries with innovative solutions.
       </p>
     </div>
-    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-        <Link to="/products">
-        <Button variant="secondary" className="w-1/2 sm:w-auto">
+    <div className="flex justify-evenly gap-4 sm:justify-start">
+        <Link to="/products" className=" text-center">
+        <Button variant="secondary" className=" sm:w-auto">
             Explore Our Products
         </Button>
         </Link>
-      <Link to="/contact">
-        <Button  variant="outline" className="w-1/2  sm:w-auto">
+      <Link to="/contact" className=" text-center">
+        <Button  variant="secondary" className="  sm:w-auto">
           Get in Touch
         </Button>
       </Link>
@@ -40,13 +40,13 @@ const HeroSection = () => (
 
 // Product Showcase Component
 const ProductShowcase = () => (
-  <Card className="overflow-hidden rounded-lg border bg-white shadow-xl">
+  <Card className="overflow-hidden rounded-lg border bg-white shadow-xl ">
     <TopBar />
-    <div className="overflow-hidden">
-      <Tabs defaultValue="product0" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
+    <div className="">
+      <Tabs defaultValue="product0" className="w-full ">
+        <TabsList className="grid grid-cols-3 bg-primary text-background px-4 rounded-none ">
           {products.slice(0, 3).map((product) => (
-            <TabsTrigger key={product.id} value={product.id} className="">
+            <TabsTrigger key={product.id} value={product.id} className="font-extrabold">
               {product.name}
             </TabsTrigger>
           ))}
