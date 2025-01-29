@@ -45,10 +45,11 @@ export default function CTASection() {
           >
             <div className="relative aspect-square w-full max-w-md mx-auto">
               <img
-                // src="https://placehold.co/400"
                 src="/images/CTA.jpg"
                 alt="C4E Labs showcase visualization"
                 className="w-full h-full object-cover rounded-2xl"
+                width={600}
+                height={600}
               />
               {/* Gradient overlay */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/10 via-transparent to-transparent" />

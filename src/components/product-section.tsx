@@ -70,6 +70,8 @@ export default function ProductSection({ product, index }: { product: ProductInt
                 src={product.imageSrc || "https://placehold.co/400"} // Fallback to placeholder if no imageSrc
                 alt={`${product.name} interface`}
                 className="object-contain w-full"
+                height={400}
+                width={400}
               />
             </div>
             <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-background to-transparent pointer-events-none" />
