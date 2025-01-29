@@ -24,7 +24,7 @@ export default function ProductSection({ product, index }: { product: ProductInt
 
   return (
     <div
-      className={`relative overflow-hidden text-background blob2:text-foreground ${index % 2 === 0 ? "bg-gradient-radial-stripe" : "bg-gradient-radial-quad"}`}
+      className={`relative overflow-hidden text-background blob3:text-foreground ${index % 2 === 0 ? "bg-gradient-radial-stripe" : "bg-gradient-radial-quad"}`}
     >
       {/* Background circle */}
       {product.themeColor && (
@@ -47,7 +47,7 @@ export default function ProductSection({ product, index }: { product: ProductInt
               <h2 className="mb-4 text-4xl font-bold tracking-tight lg:text-5xl">{product.name}</h2>
 
               {/* Description */}
-              <p className="text-xl text-gray-100/80 min-[544px]:text-gray-700/80">{product.description}</p>
+              <p className="text-xl text-gray-100/80 blob3:text-gray-700/80">{product.description}</p>
             </div>
 
             {/* Features */}
