@@ -6,7 +6,7 @@ export const productTypes = [
     id: "saas",
     name: "SaaS Products",
     description:
-      "Explore our comprehensive range of Software as a Service solutions designed to streamline your business operations, boost productivity, and drive growth in the digital landscape.",
+      "Powerful software solutions that streamline your business and boost productivity in today's digital world.",
     icon: (className = "h-8 w-8 text-blue-600") => React.createElement(Cloud, { className }),
     color: "bg-gradient-two-corners bg-white/30",
   },
@@ -14,7 +14,7 @@ export const productTypes = [
     id: "shopify-plugins",
     name: "Shopify Plugins",
     description:
-      "Enhance your Shopify store with our powerful plugins, crafted to optimize your e-commerce experience, increase sales, and provide seamless integration with various services and features.",
+      "Level up your Shopify store with plugins that boost sales and seamlessly integrate with the tools you love.",
     icon: (className = "h-8 w-8 text-green-500") => React.createElement(ShoppingBag, { className }),
     color: "bg-white/30",
   },
@@ -22,7 +22,7 @@ export const productTypes = [
     id: "others",
     name: "Other Products",
     description:
-      "Discover our diverse range of innovative products that don't fit the traditional SaaS or Shopify plugin categories. These unique solutions address specific needs across various industries and use cases.",
+      "Innovative solutions for unique challenges — when you need something different from the usual tools.",
     icon: (className = "h-8 w-8 text-gray-600") => React.createElement(Package, { className }),
     color: "bg-gradient-two-corners-top bg-white/30",
   },
