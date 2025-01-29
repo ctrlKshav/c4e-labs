@@ -8,23 +8,30 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
+import { createFileRoute } from '@tanstack/react-router'
+
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as ContactImport } from './routes/contact'
 import { Route as IndexImport } from './routes/index'
-import { Route as ProductsIndexImport } from './routes/products/index'
-import { Route as ProductsShopifyPluginsImport } from './routes/products/shopify-plugins'
-import { Route as ProductsSaasImport } from './routes/products/saas'
-import { Route as ProductsOthersImport } from './routes/products/others'
+
+// Create Virtual Routes
+
+const ContactLazyImport = createFileRoute('/contact')()
+const ProductsIndexLazyImport = createFileRoute('/products/')()
+const ProductsShopifyPluginsLazyImport = createFileRoute(
+  '/products/shopify-plugins',
+)()
+const ProductsSaasLazyImport = createFileRoute('/products/saas')()
+const ProductsOthersLazyImport = createFileRoute('/products/others')()
 
 // Create/Update Routes
 
-const ContactRoute = ContactImport.update({
+const ContactLazyRoute = ContactLazyImport.update({
   id: '/contact',
   path: '/contact',
   getParentRoute: () => rootRoute,
-} as any)
+} as any).lazy(() => import('./routes/contact.lazy').then((d) => d.Route))
 
 const IndexRoute = IndexImport.update({
   id: '/',
@@ -32,29 +39,37 @@ const IndexRoute = IndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const ProductsIndexRoute = ProductsIndexImport.update({
+const ProductsIndexLazyRoute = ProductsIndexLazyImport.update({
   id: '/products/',
   path: '/products/',
   getParentRoute: () => rootRoute,
-} as any)
+} as any).lazy(() =>
+  import('./routes/products/index.lazy').then((d) => d.Route),
+)
 
-const ProductsShopifyPluginsRoute = ProductsShopifyPluginsImport.update({
-  id: '/products/shopify-plugins',
-  path: '/products/shopify-plugins',
-  getParentRoute: () => rootRoute,
-} as any)
+const ProductsShopifyPluginsLazyRoute = ProductsShopifyPluginsLazyImport.update(
+  {
+    id: '/products/shopify-plugins',
+    path: '/products/shopify-plugins',
+    getParentRoute: () => rootRoute,
+  } as any,
+).lazy(() =>
+  import('./routes/products/shopify-plugins.lazy').then((d) => d.Route),
+)
 
-const ProductsSaasRoute = ProductsSaasImport.update({
+const ProductsSaasLazyRoute = ProductsSaasLazyImport.update({
   id: '/products/saas',
   path: '/products/saas',
   getParentRoute: () => rootRoute,
-} as any)
+} as any).lazy(() => import('./routes/products/saas.lazy').then((d) => d.Route))
 
-const ProductsOthersRoute = ProductsOthersImport.update({
+const ProductsOthersLazyRoute = ProductsOthersLazyImport.update({
   id: '/products/others',
   path: '/products/others',
   getParentRoute: () => rootRoute,
-} as any)
+} as any).lazy(() =>
+  import('./routes/products/others.lazy').then((d) => d.Route),
+)
 
 // Populate the FileRoutesByPath interface
 
@@ -71,35 +86,35 @@ declare module '@tanstack/react-router' {
       id: '/contact'
       path: '/contact'
       fullPath: '/contact'
-      preLoaderRoute: typeof ContactImport
+      preLoaderRoute: typeof ContactLazyImport
       parentRoute: typeof rootRoute
     }
     '/products/others': {
       id: '/products/others'
       path: '/products/others'
       fullPath: '/products/others'
-      preLoaderRoute: typeof ProductsOthersImport
+      preLoaderRoute: typeof ProductsOthersLazyImport
       parentRoute: typeof rootRoute
     }
     '/products/saas': {
       id: '/products/saas'
       path: '/products/saas'
       fullPath: '/products/saas'
-      preLoaderRoute: typeof ProductsSaasImport
+      preLoaderRoute: typeof ProductsSaasLazyImport
       parentRoute: typeof rootRoute
     }
     '/products/shopify-plugins': {
       id: '/products/shopify-plugins'
       path: '/products/shopify-plugins'
       fullPath: '/products/shopify-plugins'
-      preLoaderRoute: typeof ProductsShopifyPluginsImport
+      preLoaderRoute: typeof ProductsShopifyPluginsLazyImport
       parentRoute: typeof rootRoute
     }
     '/products/': {
       id: '/products/'
       path: '/products'
       fullPath: '/products'
-      preLoaderRoute: typeof ProductsIndexImport
+      preLoaderRoute: typeof ProductsIndexLazyImport
       parentRoute: typeof rootRoute
     }
   }
@@ -109,30 +124,30 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/contact': typeof ContactRoute
-  '/products/others': typeof ProductsOthersRoute
-  '/products/saas': typeof ProductsSaasRoute
-  '/products/shopify-plugins': typeof ProductsShopifyPluginsRoute
-  '/products': typeof ProductsIndexRoute
+  '/contact': typeof ContactLazyRoute
+  '/products/others': typeof ProductsOthersLazyRoute
+  '/products/saas': typeof ProductsSaasLazyRoute
+  '/products/shopify-plugins': typeof ProductsShopifyPluginsLazyRoute
+  '/products': typeof ProductsIndexLazyRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/contact': typeof ContactRoute
-  '/products/others': typeof ProductsOthersRoute
-  '/products/saas': typeof ProductsSaasRoute
-  '/products/shopify-plugins': typeof ProductsShopifyPluginsRoute
-  '/products': typeof ProductsIndexRoute
+  '/contact': typeof ContactLazyRoute
+  '/products/others': typeof ProductsOthersLazyRoute
+  '/products/saas': typeof ProductsSaasLazyRoute
+  '/products/shopify-plugins': typeof ProductsShopifyPluginsLazyRoute
+  '/products': typeof ProductsIndexLazyRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
-  '/contact': typeof ContactRoute
-  '/products/others': typeof ProductsOthersRoute
-  '/products/saas': typeof ProductsSaasRoute
-  '/products/shopify-plugins': typeof ProductsShopifyPluginsRoute
-  '/products/': typeof ProductsIndexRoute
+  '/contact': typeof ContactLazyRoute
+  '/products/others': typeof ProductsOthersLazyRoute
+  '/products/saas': typeof ProductsSaasLazyRoute
+  '/products/shopify-plugins': typeof ProductsShopifyPluginsLazyRoute
+  '/products/': typeof ProductsIndexLazyRoute
 }
 
 export interface FileRouteTypes {
@@ -165,20 +180,20 @@ export interface FileRouteTypes {
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ContactRoute: typeof ContactRoute
-  ProductsOthersRoute: typeof ProductsOthersRoute
-  ProductsSaasRoute: typeof ProductsSaasRoute
-  ProductsShopifyPluginsRoute: typeof ProductsShopifyPluginsRoute
-  ProductsIndexRoute: typeof ProductsIndexRoute
+  ContactLazyRoute: typeof ContactLazyRoute
+  ProductsOthersLazyRoute: typeof ProductsOthersLazyRoute
+  ProductsSaasLazyRoute: typeof ProductsSaasLazyRoute
+  ProductsShopifyPluginsLazyRoute: typeof ProductsShopifyPluginsLazyRoute
+  ProductsIndexLazyRoute: typeof ProductsIndexLazyRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ContactRoute: ContactRoute,
-  ProductsOthersRoute: ProductsOthersRoute,
-  ProductsSaasRoute: ProductsSaasRoute,
-  ProductsShopifyPluginsRoute: ProductsShopifyPluginsRoute,
-  ProductsIndexRoute: ProductsIndexRoute,
+  ContactLazyRoute: ContactLazyRoute,
+  ProductsOthersLazyRoute: ProductsOthersLazyRoute,
+  ProductsSaasLazyRoute: ProductsSaasLazyRoute,
+  ProductsShopifyPluginsLazyRoute: ProductsShopifyPluginsLazyRoute,
+  ProductsIndexLazyRoute: ProductsIndexLazyRoute,
 }
 
 export const routeTree = rootRoute
@@ -203,19 +218,19 @@ export const routeTree = rootRoute
       "filePath": "index.tsx"
     },
     "/contact": {
-      "filePath": "contact.tsx"
+      "filePath": "contact.lazy.tsx"
     },
     "/products/others": {
-      "filePath": "products/others.tsx"
+      "filePath": "products/others.lazy.tsx"
     },
     "/products/saas": {
-      "filePath": "products/saas.tsx"
+      "filePath": "products/saas.lazy.tsx"
     },
     "/products/shopify-plugins": {
-      "filePath": "products/shopify-plugins.tsx"
+      "filePath": "products/shopify-plugins.lazy.tsx"
     },
     "/products/": {
-      "filePath": "products/index.tsx"
+      "filePath": "products/index.lazy.tsx"
     }
   }
 }

@@ -7,7 +7,7 @@ import "./index.css"
 // Set up a Router instance
 const router = createRouter({
   routeTree,
-  defaultPreload: 'intent',
+  defaultPreload: 'viewport',
 })
 
 // Register things for typesafety

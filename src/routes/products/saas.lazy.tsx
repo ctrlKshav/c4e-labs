@@ -1,8 +1,8 @@
 ﻿import ProductSection from '@/components/product-section'
 import products from '@/data/productData'
-import { createFileRoute } from '@tanstack/react-router'
+import { createLazyFileRoute } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/products/saas')({
+export const Route = createLazyFileRoute('/products/saas')({
   component: SaaSProducts,
 })
 

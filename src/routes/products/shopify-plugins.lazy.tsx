@@ -1,14 +1,16 @@
 ﻿import ProductSection from '@/components/product-section'
 import products from '@/data/productData'
-import { createFileRoute } from '@tanstack/react-router'
+import { createLazyFileRoute } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/products/shopify-plugins')({
+export const Route = createLazyFileRoute('/products/shopify-plugins')({
   component: ShopifyPlugins,
 })
 
 export default function ShopifyPlugins() {
   // Filter products by productType === "shopify plugin"
-  const shopifyPlugins = products.filter((product) => product.productType === "shopify plugin")
+  const shopifyPlugins = products.filter(
+    (product) => product.productType === 'shopify plugin',
+  )
 
   return (
     <div className="">
