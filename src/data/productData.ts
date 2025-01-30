@@ -26,7 +26,7 @@ const products: ProductInterface[] = [
   {
     id: "product1",
     name: "Zeon",
-    icon: (className = "h-6 w-6 text-purple-700") => React.createElement(MessageCircle, { className }),
+    icon: (className = "h-6 w-6 text-purple-900") => React.createElement(MessageCircle, { className }),
     description:
       "Your personal branding copilot. Zeon helps you write and generate posts, automate content, and analyze performance on LinkedIn.",
     themeColor: "bg-purple-700",

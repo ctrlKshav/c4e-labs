@@ -34,7 +34,7 @@ export default function SelectProductType() {
             >
               <CardHeader className="pb-4">
                 <div className="flex flex-col items-center justify-center space-y-3">
-                  {type.icon('h-12 w-12')}
+                  {type.icon()}
                   <CardTitle className="text-2xl font-semibold text-primary text-center">
                     {type.name}
                   </CardTitle>
