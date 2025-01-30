@@ -19,19 +19,18 @@ const Hero = () => {
           <div className="text-center">
             <div className="mx-auto flex max-w-screen-lg flex-col gap-12">
               <h1 className="text-4xl font-extrabold lg:text-7xl ">
-                Empowering Innovation with C4E Labs
+              We grow ideas from inception to impactful businesses.
               </h1>
-              <p className="text-balance text-muted-foreground lg:text-xl max-w-3xl mx-auto">
-                At C4E Labs, we build cutting-edge solutions that drive innovation and transform businesses. Discover our
-                expertise in software development, AI-driven technologies, and creative problem-solving.
+              <p className="text-balance text-foreground lg:text-xl max-w-3xl mx-auto">
+              C4E Labs is a venture studio where we build, launch, and grow micro SaaS products. Whether it's automation, productivity, or niche tools, we create products that solve real problems.
               </p>
             </div>
             <Link to='/products'>
               <Button
                 size="lg"
-                className="mt-8 sm:mt-16"
+                className="mt-8 sm:mt-16 sm:text-lg font-extrabold" 
               >
-                Explore Our Solutions
+                OUR PRODUCTS
               </Button>
             </Link>
           </div>
