@@ -72,6 +72,7 @@ export default function ProductSection({ product, index }: { product: ProductInt
                 className="object-contain w-full"
                 height={400}
                 width={400}
+                loading="lazy"
               />
             </div>
             <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-background to-transparent pointer-events-none" />
