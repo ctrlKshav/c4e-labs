@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <Hero />
       {/* <CompanyShowcase /> */}
-      <C4ELabsBentoGrid />
+      {/* <C4ELabsBentoGrid /> */}
       <ProductsOverview />
       <AboutUs />
       <MVPS />
