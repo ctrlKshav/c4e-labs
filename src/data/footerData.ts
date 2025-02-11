@@ -9,16 +9,16 @@ export const socialLinks = [
 
 export const productLinks = [
   {
-    name: "LegalDocs",
-    href: "https://legaldocs-tau.vercel.app/",
-  },
-  {
     name: "Zeon",
     href: "https://gozeon.com/",
   },
   {
     name: "Resume AI Pro",
     href: "https://resume-site-c4e.vercel.app/",
+  },
+  {
+    name: "Curattor",
+    href: "https://zeon-8qz.pages.dev"
   },
   {
     name: "All Products",
