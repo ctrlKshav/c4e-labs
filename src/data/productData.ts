@@ -3,28 +3,9 @@ import { ProductInterface } from "@/types/productTypes";
 import { FileSpreadsheet, Users, Rocket, Pencil, MessageCircle, Link, BookOpen, Clipboard, Bell, Mic, Image, FileText, Scale, File, BriefcaseBusiness } from "lucide-react";
 
 const products: ProductInterface[] = [
+ 
   {
     id: "product0",
-    name: "LegalDocs",
-    icon: (className = "h-6 w-6 text-blue-500") => React.createElement(Scale, { className }),
-    description:
-      "Manage, track, and collaborate on legal documents with your team. LegalDocs brings every piece of your legal workflow together.",
-    themeColor: "bg-blue-500",
-    features: {
-      title: "Key Features",
-      items: [
-        "Document collaboration",
-        "Compliance tracking",
-        "Legal workflow management",
-      ],
-    },
-    link: "https://legaldocs-tau.vercel.app/",
-    productType: "saas",
-    productStatus: "Live",
-    imageSrc: "/images/products/LegalDocs.webp",
-  },
-  {
-    id: "product1",
     name: "Zeon",
     icon: (className = "h-6 w-6 text-purple-900") => React.createElement(MessageCircle, { className }),
     description:
@@ -44,7 +25,7 @@ const products: ProductInterface[] = [
     imageSrc: "/images/products/Zeon.webp",
   },
   {
-    id: "product2",
+    id: "product1",
     name: "ResumeAI",
     icon: (className = "h-6 w-6 text-violet-500") => React.createElement(File, { className }),
     description:
@@ -64,7 +45,7 @@ const products: ProductInterface[] = [
     imageSrc: "/images/products/ResumeAIPro.webp",
   },
   {
-    id: "product3",
+    id: "product2",
     name: "Curattor",
     icon: (className = "h-6 w-6 text-blue-500") => React.createElement(Pencil, { className }),
     description:
@@ -84,7 +65,7 @@ const products: ProductInterface[] = [
     imageSrc: "/images/products/Curattor4.webp",
   },
   {
-    id: "product4",
+    id: "product3",
     name: "CSV Data Analyzer",
     icon: (className = "h-6 w-6 text-orange-500") => React.createElement(FileSpreadsheet, { className }),
     description:
@@ -104,7 +85,7 @@ const products: ProductInterface[] = [
     imageSrc: "/images/products/CSV_CSV2_CSV3.webp",
   },
   {
-    id: "product5",
+    id: "product4",
     name: "Finfriend",
     icon: (className = "h-6 w-6 text-pink-500") => React.createElement(Clipboard, { className }),
     description:
@@ -124,7 +105,7 @@ const products: ProductInterface[] = [
     imageSrc: "/images/products/FinFriend.webp",
   },
   {
-    id: "product6",
+    id: "product5",
     name: "WhatsApp Reminder Bot",
     icon: (className = "h-6 w-6 text-teal-500") => React.createElement(Bell, { className }),
     description:
@@ -143,7 +124,7 @@ const products: ProductInterface[] = [
     imageSrc: "/images/products/WhatsappReminder1.webp",
   },
   {
-    id: "product7",
+    id: "product6",
     name: "ChatMe - WhatsApp Chat Button",
     icon: (className = "h-6 w-6 text-yellow-500") => React.createElement(MessageCircle, { className }),
     description:
@@ -163,7 +144,7 @@ const products: ProductInterface[] = [
     imageSrc: "/images/products/ChatMe.webp",
   },
   {
-    id: "product8",
+    id: "product7",
     name: "Snapcraft",
     icon: (className = "h-6 w-6 text-red-500") => React.createElement(Image, { className }),
     description:
@@ -183,7 +164,7 @@ const products: ProductInterface[] = [
     imageSrc: "/images/products/SnapCraft.webp",
   },
   {
-    id: "product9",
+    id: "product8",
     name: "TezPDF: Product Catalogues",
     icon: (className = "h-6 w-6 text-cyan-500") => React.createElement(BookOpen, { className }),
     description:
@@ -203,7 +184,7 @@ const products: ProductInterface[] = [
     imageSrc: "/images/products/Tezi.webp",
   },
   {
-    id: "product10",
+    id: "product9",
     name: "Tezi-B2B",
     icon: (className = "h-6 w-6 text-violet-500") => React.createElement(Users, { className }),
     description:
