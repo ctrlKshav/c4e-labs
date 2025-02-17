@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between space-x-4 lg:space-x-12 w-full">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2"> 
-            <FlaskConical className="h-6 w-6" color="#008080" />
+            <FlaskConical className="h-6 w-6" color="#FF007F" />
             <span className="text-2xl font-semibold">C4E LABS</span>
           </Link>
 
@@ -132,7 +132,7 @@ const Navbar: React.FC = () => {
               >
                 <SheetHeader className="border-b p-4">
                   <SheetTitle className="flex items-center space-x-2">
-                    <FlaskConical className="h-6 w-6" color="#008080" />
+                    <FlaskConical className="h-6 w-6" color="#FF007F" />
                     <span>C4E LABS</span>
                   </SheetTitle>
                   

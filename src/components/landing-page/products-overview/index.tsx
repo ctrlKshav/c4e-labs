@@ -58,7 +58,7 @@ const ProductShowcase = () => (
 // Main Component
 export default function ProductOverview() {
   return (
-    <div className="relative overflow-hidden bg-gradient-four-corners min-h-screen ">
+    <div className="relative overflow-hidden  min-h-screen ">
       <div className="absolute left-0 top-0 h-[600px] w-[600px]  mobile:w-[800px] sm:h-[800px] lg:w-[1000px] lg:h-[1000px] translate-x-[-30%] translate-y-[-15%] rounded-full bg-primary/90" />
       
       <div className=" relative mx-auto px-3 sm:px-4 py-8 sm:py-12 md:py-16 lg:py-24 ">
