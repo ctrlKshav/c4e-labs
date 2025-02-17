@@ -69,7 +69,7 @@ const AboutUs: React.FC = () => {
                     </motion.li>
                   ))}
                 </ul>
-                <Link to="/">
+                <Link to="/coming-soon">
                   <Button
                     variant="secondary"
                     className="shadow-md w-full sm:w-auto bg-primary-foreground text-primary hover:bg-primary-foreground/90"

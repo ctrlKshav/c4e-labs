@@ -18,6 +18,7 @@ import { Route as IndexImport } from './routes/index'
 // Create Virtual Routes
 
 const ContactLazyImport = createFileRoute('/contact')()
+const ComingSoonLazyImport = createFileRoute('/coming-soon')()
 const ProductsIndexLazyImport = createFileRoute('/products/')()
 const ProductsShopifyPluginsLazyImport = createFileRoute(
   '/products/shopify-plugins',
@@ -32,6 +33,12 @@ const ContactLazyRoute = ContactLazyImport.update({
   path: '/contact',
   getParentRoute: () => rootRoute,
 } as any).lazy(() => import('./routes/contact.lazy').then((d) => d.Route))
+
+const ComingSoonLazyRoute = ComingSoonLazyImport.update({
+  id: '/coming-soon',
+  path: '/coming-soon',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/coming-soon.lazy').then((d) => d.Route))
 
 const IndexRoute = IndexImport.update({
   id: '/',
@@ -82,6 +89,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
+    '/coming-soon': {
+      id: '/coming-soon'
+      path: '/coming-soon'
+      fullPath: '/coming-soon'
+      preLoaderRoute: typeof ComingSoonLazyImport
+      parentRoute: typeof rootRoute
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -124,6 +138,7 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/coming-soon': typeof ComingSoonLazyRoute
   '/contact': typeof ContactLazyRoute
   '/products/others': typeof ProductsOthersLazyRoute
   '/products/saas': typeof ProductsSaasLazyRoute
@@ -133,6 +148,7 @@ export interface FileRoutesByFullPath {
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/coming-soon': typeof ComingSoonLazyRoute
   '/contact': typeof ContactLazyRoute
   '/products/others': typeof ProductsOthersLazyRoute
   '/products/saas': typeof ProductsSaasLazyRoute
@@ -143,6 +159,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
+  '/coming-soon': typeof ComingSoonLazyRoute
   '/contact': typeof ContactLazyRoute
   '/products/others': typeof ProductsOthersLazyRoute
   '/products/saas': typeof ProductsSaasLazyRoute
@@ -154,6 +171,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/coming-soon'
     | '/contact'
     | '/products/others'
     | '/products/saas'
@@ -162,6 +180,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/coming-soon'
     | '/contact'
     | '/products/others'
     | '/products/saas'
@@ -170,6 +189,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/coming-soon'
     | '/contact'
     | '/products/others'
     | '/products/saas'
@@ -180,6 +200,7 @@ export interface FileRouteTypes {
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ComingSoonLazyRoute: typeof ComingSoonLazyRoute
   ContactLazyRoute: typeof ContactLazyRoute
   ProductsOthersLazyRoute: typeof ProductsOthersLazyRoute
   ProductsSaasLazyRoute: typeof ProductsSaasLazyRoute
@@ -189,6 +210,7 @@ export interface RootRouteChildren {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ComingSoonLazyRoute: ComingSoonLazyRoute,
   ContactLazyRoute: ContactLazyRoute,
   ProductsOthersLazyRoute: ProductsOthersLazyRoute,
   ProductsSaasLazyRoute: ProductsSaasLazyRoute,
@@ -207,6 +229,7 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
+        "/coming-soon",
         "/contact",
         "/products/others",
         "/products/saas",
@@ -216,6 +239,9 @@ export const routeTree = rootRoute
     },
     "/": {
       "filePath": "index.tsx"
+    },
+    "/coming-soon": {
+      "filePath": "coming-soon.lazy.tsx"
     },
     "/contact": {
       "filePath": "contact.lazy.tsx"

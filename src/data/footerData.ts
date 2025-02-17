@@ -33,11 +33,11 @@ export const companyLinks = [
   },
   {
     name: "Blog",
-    href: "#",
+    href: "https://c4e.in/",
   },
   {
     name: "Community",
-    href: "#",
+    href: "/coming-soon",
   },
   {
     name: "Contact",
