@@ -10,7 +10,7 @@ export default function ProductSection({ product, index }: { product: ProductInt
 
   return (
     <div
-      className={`relative overflow-hidden text-background blob3:text-foreground ${index % 2 === 0 ? "bg-gradient-radial-stripe" : "bg-gradient-radial-quad"}`}
+      className={`relative overflow-hidden text-background blob3:text-foreground ${index % 2 === 0 ? "bg-gradient-radial-quad" : "bg-gradient-radial-quad"}`}
     >
       {/* Background circle */}
       {product.themeColor && (

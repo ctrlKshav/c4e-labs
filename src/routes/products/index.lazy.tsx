@@ -18,7 +18,7 @@ export const Route = createLazyFileRoute('/products/')({
 
 export default function SelectProductType() {
   return (
-    <div className="min-h-screen bg-gradient-radial-stripe animate-gradient-slow py-8 px-4 sm:px-8 md:px-16">
+    <div className="min-h-screen  animate-gradient-slow py-8 px-4 sm:px-8 md:px-16">
       <div className="mx-auto">
         <h1 className="text-5xl font-bold text-center mb-10 text-foreground drop-shadow-glow-primary mt-28">
           Select Product Type

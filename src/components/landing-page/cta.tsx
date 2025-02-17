@@ -7,7 +7,7 @@ import { Link } from "@tanstack/react-router";
 
 export default function CTASection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-radial-stripe">
+    <section className="relative overflow-hidden ">
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}

@@ -63,10 +63,10 @@
 
 @layer utilities {
   .bg-gradient-radial-stripe {
-    background: radial-gradient(circle at top left, #fda4af, transparent 30%),
-      radial-gradient(circle at top right, #8E4585, transparent 30%),
-      radial-gradient(at bottom left, #8E4585, transparent 30%),
-      radial-gradient(at bottom right, #fda4af, transparent 30%);
+    background: radial-gradient(circle at top left, #E11D48, transparent 30%),
+      radial-gradient(circle at top right, #F8008F, transparent 20%),
+      radial-gradient(at bottom left, #F8008F, transparent 20%),
+      radial-gradient(at bottom right, #E11D48, transparent 30%);
     background-size: 100% 100%;
     background-position: center;
   }
@@ -93,10 +93,10 @@
 
  /* Subtle Multi-corner radial gradients */
 .bg-gradient-radial-quad {
-  background: radial-gradient(circle at top left, rgba(220, 20, 60, 0.2), transparent 40%),
-    radial-gradient(circle at top right, rgba(220, 20, 60, 0.2), transparent 40%),
-    radial-gradient(at bottom left, rgba(220, 20, 60, 0.2), transparent 40%),
-    radial-gradient(at bottom right, rgba(220, 20, 60, 0.2), transparent 40%);
+  background: radial-gradient(circle at top left, #E11D48, transparent 20%),
+    radial-gradient(circle at top right, #F8008F33, transparent 40%),
+    radial-gradient(at bottom left, #E11D48, transparent 20%),
+    radial-gradient(at bottom right, #F8008F, transparent 20%);
   background-size: 100% 100%;
   background-position: center;
 }
