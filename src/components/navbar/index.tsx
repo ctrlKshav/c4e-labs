@@ -59,8 +59,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between space-x-4 lg:space-x-12 w-full">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2"> 
-            <FlaskConical className="h-6 w-6" color="#FF007F" />
-            <span className="text-2xl font-semibold">C4E LABS</span>
+            <img src="logo.png" width={96} height={96} alt="C4E Labs Logo"/>
           </Link>
 
           {/* Desktop Navigation */}
